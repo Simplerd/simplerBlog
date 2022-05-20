@@ -99,6 +99,8 @@ Handler消息传递机制:多个线程并发更新UI时，保证线程安全
 
 [![示意图.png](https://s1.ax1x.com/2022/05/06/OuFqzR.png)](https://s1.ax1x.com/2022/05/06/OuFqzR.png)
 
+注：[Android中为什么主线程不会因为Looper.loop()里的死循环卡死？](https://www.zhihu.com/question/34652589)
+
 # 总结
 Android开发中，UI操作在主线程中进行，但是主线程又不能进行耗时操作，否则会阻塞线程，产生我们常见的ANR异常，所以常常把耗时操作放到其它子线程进行。如果在子线程中需要更新UI，一般是通过 Handler发送消息( message ），主线程接收消息并且进行相应的处理。以上就是Handler通讯消息传递机制的详解。
 
