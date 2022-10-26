@@ -224,14 +224,3 @@
   * 请看：https://www.zhihu.com/question/34652589
 
 
-### ArrayList与CopyOnWriteArrayList区别以及使用场景
-  * 请看：https://www.cnblogs.com/simple-focus/p/7439919.html
-
-### 关于HTTP协议，一篇就够了
-  * 请看:https://www.cnblogs.com/ranyonsue/p/5984001.html
-### HTTP 协议入门
-  * 请看：http://www.ruanyifeng.com/blog/2016/08/http.html
-### 网络基础知识之 HTTP 协议
-  * 请看：https://zhuanlan.zhihu.com/p/24913080
-### 文件上传下载
-  * 请看：https://github.com/jeasonlzy/okhttp-OkGo/wiki/OkDownload#okdownload%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD
