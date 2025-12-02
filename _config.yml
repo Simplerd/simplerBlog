@@ -3,20 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Simpler-元宇宙探索
-subtitle:
-description: '一水护田将绿绕，两山排闼送青来'
-keywords: 'jackchaizh'
-author: Simpler
+title: Hexo
+subtitle: ''
+description: ''
+keywords:
+author: John Doe
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-# todo 这块已经修改，如需回复请去掉注释
-# permalink: :year/:month/:day/:title/
-permalink: relaxed/:title/
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -33,9 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-# todo 这块已经修改，如需回复请去掉注释
-# new_post_name: :title.md # File name of new posts
-new_post_name: :year/:relaxed/:title.md
+new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -44,11 +40,12 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: false
+  line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
@@ -56,14 +53,8 @@ highlight:
 prismjs:
   enable: false
   preprocess: true
-  line_number: false
+  line_number: true
   tab_replace: ''
-
-# 本地图片加载
-  post_asset_folder: true
-  marked:
-    prependRoot: true
-    postAsset: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -78,13 +69,6 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
-
-#搜索
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -118,8 +102,5 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repository:
-    github: https://github.com/Simplerd/Simplerd.github.io.git
-    gitee: https://gitee.com/simplerj/simpler.git
-  branch: master
+  type: ''
+

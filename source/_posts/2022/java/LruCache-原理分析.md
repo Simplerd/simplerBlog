@@ -8,10 +8,10 @@ tags:
 cover: https://s1.ax1x.com/2022/03/24/q34Snx.jpg
 ---
 
-1.LruCache原理是什么
+# 1.LruCache原理是什么
  LruCache 采用最近最少使用算法，设定一个缓存大小，当缓存达到这个大小之后，会将最老的数据移除，避免图片占用内存过大导致OOM。
 
-2.Lrucache源码分析
+# 2.Lrucache源码分析
  ```java
 public class LruCache<K, V> {
 	// 数据最终存在 LinkedHashMap 中
