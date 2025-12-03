@@ -103,6 +103,6 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-  repo: https://github.com/Simplerd/Simplerd.github.io.git
-  branch: master
+  repo: https://github.com/Simplerd/simplerBlog.git
+  branch: main
 
