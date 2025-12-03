@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>TouchBar中调节音量和亮度消失</title>
-    <url>/2022/10/27/2022/Mac%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/TouchBar%E4%B8%AD%E8%B0%83%E8%8A%82%E9%9F%B3%E9%87%8F%E5%92%8C%E4%BA%AE%E5%BA%A6%E6%B6%88%E5%A4%B1/</url>
-    <content><![CDATA[<h2 id="打开-Terminal，运行”killall-ControlStrip“，就可以了"><a href="#打开-Terminal，运行”killall-ControlStrip“，就可以了" class="headerlink" title="打开 Terminal，运行”killall ControlStrip“，就可以了"></a>打开 Terminal，运行”killall ControlStrip“，就可以了</h2><h3 id="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"><a href="#如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻" class="headerlink" title="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"></a><font color=#9dc2af>如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻</font></h3>]]></content>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git代码回滚</title>
     <url>/2022/03/17/2022/Git/git-back/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&ensp;在我们开发过程中，因各种原因，避免不了将业务代码回滚至指定版本，或者具体一些到某次commit。<br>下面我们将具体步骤及具体实现做分析。</p>
@@ -41,121 +33,210 @@
       </tags>
   </entry>
   <entry>
-    <title>Android-如何使用注解进行代码检查</title>
-    <url>/2022/09/15/2022/android/Android-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E8%BF%9B%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5/</url>
-    <content><![CDATA[<h3 id="Nullness-注解"><a href="#Nullness-注解" class="headerlink" title="Nullness 注解"></a>Nullness 注解</h3><ul>
-<li>使用 Nullness 注解可以检查给定变量、参数和返回值是否允许 null值<ul>
-<li>@Nullable ：表示可以为 null 的变量、参数或返回值，</li>
-<li>@NonNull ：表示不可为 null 的变量、参数或返回值。</li>
+    <title>Markdown 语法</title>
+    <url>/2022/03/17/2022/Markdown/markdown-grammar/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> &ensp; Markdown语法的基本使用</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><img src="https://s3.bmp.ovh/imgs/2022/03/5e25d102468382c1.jpg"></p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>MarkDown基础语法使用参考</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><ul>
+<li><p>语法<br>一级标题用一个#，二级标题## ….最多展示六级标题</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">###### 五级标题</span><br><span class="line">####### 六级标题</span><br></pre></td></tr></table></figure></li>
+<li><p>效果</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
+</ul>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><ul>
+<li><p>加粗</p>
+<ul>
+<li>语法<br> 要加粗的文本前后用两个 ** 符号包裹起来</li>
+<li>效果<br> <strong>我是加粗后的字体</strong></li>
+</ul>
+</li>
+<li><p>斜体</p>
+<ul>
+<li>语法<br> 要倾斜的文本前后用一个 * 符号包裹起来</li>
+<li>效果</li>
+<li>我是倾斜后的字体*</li>
+</ul>
+</li>
+<li><p>斜体&amp;加粗<br>*语法<br>  要倾斜并且加粗的文本前后用三个 ***  符号包裹起来<br>*效果</p>
+</li>
+<li><p><strong>我是倾斜并且加粗后的字体</strong>*</p>
+</li>
+<li><p>删除线</p>
+<ul>
+<li>语法<br> 要加删除线的文本左右分别用两个 ~~ 符号包起来</li>
+<li>效果<br><del>我是添加删除线的字体</del></li>
 </ul>
 </li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@NonNull</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> View <span class="title function_">onCreateView</span><span class="params">(String name, <span class="meta">@NonNull</span> Context context,<span class="meta">@NonNull</span> AttributeSet attrs)</span> &#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="资源注解"><a href="#资源注解" class="headerlink" title="资源注解"></a>资源注解</h3><ul>
-<li>资源注解的使用可使得在源码阶段让编辑器检查书写的不规范，一定程度上优化代码结构<ul>
-<li>@StringRes：      表示检查是否包含R.string引用</li>
-<li>@ColorRes：       表示检查是否包含R.color引用</li>
-<li>@ColorInt：       表示检查是否包含表示颜色的整型</li>
-<li>@DrawableRes：    表示检查是否包含R.drawable引用</li>
-<li>@DimenRes：       表示检查是否包含R.dimen引用</li>
-<li>@InterpolatorRes：表示检查是否包含插值器引用</li>
+<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><ul>
+<li><p>空格</p>
+<ul>
+<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">插入一个空格 &amp;nbsp;   </span><br><span class="line">插入两个空格 &amp;ensp;  </span><br><span class="line">插入四个空格 &amp;emsp;   </span><br></pre></td></tr></table></figure>
+或者使用全角空格。即：在全角输入状态下直接使用空格键就ok了</li>
+<li>效果<br>&nbsp;   插入一个空格文本<br>&ensp;   插入两个空格文本<br>&emsp;   插入四个空格文本<br>　　全角按了两个空格文本😎</li>
+</ul>
+</li>
+<li><p>换行</p>
+<ul>
+<li>语法<br>使用 HTML 的 <code>&lt;br&gt;</code> 标签来实现换行。</li>
+<li>效果<br>我在这里需要换行啦<br>精彩内容在仍在继续…</li>
 </ul>
 </li>
 </ul>
-<h3 id="线程注解"><a href="#线程注解" class="headerlink" title="线程注解"></a>线程注解</h3><ul>
-<li>线程注解可以检查某个方法是否从某个特定类型的线程中调用<ul>
-<li>@MainThread：表示主线程</li>
-<li>@UiThread：表示 UI 线程</li>
-<li>@WorkerThread：表示工作线程</li>
-<li>@BinderThread：表示Binder线程</li>
-<li>@AnyThread：表示任何一个线程</li>
+<h2 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h2><ul>
+<li><p>单个段落块引用</p>
+<ul>
+<li>语法<br>要创建单个段落块引用，请在段落前添加一个 &gt; 符号。</li>
+<li>效果<blockquote>
+<p>我是单个段落引用</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>多个段落块引用</p>
+<ul>
+<li>语法<br> 要创建单个段落块引用，请在段落前与段落之间添加 &gt; 符号。</li>
+<li>效果<blockquote>
+<p>我是段落一</p>
+<p>我是段落二</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>嵌套块引用</p>
+</li>
+<li><p>语法<br> 在要嵌套的段落前添加一个 &gt;&gt; 符号。</p>
+</li>
+<li><p>效果</p>
+<blockquote>
+<p>我是段落一</p>
+<blockquote>
+<p>我是段落二并且需要嵌套引用</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>无限嵌套引用…</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ul>
+<li><p>有序列表</p>
+<ul>
+<li><p>语法<br> 列表项前添加数字并紧跟一个英文句点 1. 2. 3. 等等 …</p>
+</li>
+<li><p>效果</p>
+</li>
+</ul>
+<p>1.有序列表<br>2.有序列表<br>3.有序列表<br>…</p>
+</li>
+<li><p>无序列表<br>为了兼容，请不要在同一个列表中混用不同的分隔符，最好选定一种分隔符使用</p>
+<ul>
+<li>语法<br>无序列表用 - + * 任意一种都可以</li>
+<li>效果<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表</li>
 </ul>
 </li>
 </ul>
-<h3 id="值约束注解"><a href="#值约束注解" class="headerlink" title="值约束注解"></a>值约束注解</h3><ul>
-<li>使用值约束注解可验证传递的参数的值的合法性，可以借此指定参数的设置范围，可在一定程度上减少代码在主观程度上出现的错误<ul>
-<li>@IntRange：表示可以验证整型参数是否在指定范围内 </li>
-<li>@FloatRange：表示可以验证浮点型参数是否在指定范围内</li>
-<li>@Size：表示可以验证集合、数组、字符串参数是否在指定范围内，可指定最大值、最小值以及确切值</li>
+</li>
+</ul>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ul>
+<li><p>代码块高亮</p>
+<ul>
+<li>语法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">（```）java</span><br><span class="line">  这个写代码块</span><br><span class="line">  注意：（```）这个写法是防止符号被转义，正常写去掉（）只写 ``` 就好了</span><br><span class="line">（```）</span><br></pre></td></tr></table></figure>
+<ul>
+<li>效果<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String args[])</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>单行代码块</p>
+<ul>
+<li>语法<br>单行代码块使用 `  `包裹</li>
+<li>效果<br> <code> System.out.println(&quot;Hello World!&quot;); </code></li>
 </ul>
 </li>
 </ul>
-<h3 id="权限注解"><a href="#权限注解" class="headerlink" title="权限注解"></a>权限注解</h3><ul>
-<li>权限注解 @RequiresPermission 可以验证方法调用方的权限，即当使用了权限注解的方法时会检查有没有指定的权限，如果没有则会提示要在 AndroidManifest.xml 文件中申明权限，如果是危险权限还有进行权限动态申请</li>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><ul>
+<li>语法<br>[图片上传中…(image-9df155-1642153968831)]<br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</li>
+<li>效果<br><img src="https://s3.bmp.ovh/imgs/2022/03/3c7eea0313d87901.jpeg"></li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单个权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMessage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 全部权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(allOf = &#123;</span></span><br><span class="line"><span class="meta">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span></span><br><span class="line"><span class="meta">        Manifest.permission.READ_EXTERNAL_STORAGE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMesage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 某个权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(anyOf = &#123;</span></span><br><span class="line"><span class="meta">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span></span><br><span class="line"><span class="meta">        Manifest.permission.READ_EXTERNAL_STORAGE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMesage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="返回值注解"><a href="#返回值注解" class="headerlink" title="返回值注解"></a>返回值注解</h3><ul>
-<li>返回值注解 @CheckResult 会检查某个方法的返回值是否被使用，如果没有被使用，则会根据 suggest 配置建议使用相同公民没有返回值的另一个方法，如果返回值使用了，则和未加该注解的方法一样</li>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><ul>
+<li>语法<br>为了兼容性，请在分隔线的前后均添加空白行<br>三个以上 — 或 ***</li>
+<li>效果</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@CheckResult(suggest=&quot;#enforcePermission(String,int,int,String)&quot;)</span></span><br><span class="line"><span class="keyword">public</span>  <span class="type">int</span> <span class="title function_">checkPermission</span><span class="params">(<span class="meta">@NonNull</span> String permission, <span class="type">int</span> pid, <span class="type">int</span> uid)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="CallSuper"><a href="#CallSuper" class="headerlink" title="CallSuper"></a>CallSuper</h3><ul>
-<li>使用 @CallSuper 注解会验证子类的重写方法是否调用父类的实现，这样约束的好处是可保证父类的实现不会修改，当然，如果不使用该注解，子类重写父类的方法可以不调用弗父类的默认实现</li>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><ul>
+<li>语法<br>要创建链接，请将链接文本括在方括号（例如 [Duck Duck Go]）中，后面紧跟着括在圆括号中的 URL（例如 (<a href="https://duckduckgo.com/">https://duckduckgo.com</a>) ）。</li>
+<li>效果<br>My favorite search engine is <a href="https://duckduckgo.com/">Duck Duck Go</a>.</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 父类</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@CallSuper</span>注解的使用</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="comment">//使用@CallSuper注解，子类重写该方法时必须调用该方法</span></span><br><span class="line">    <span class="meta">@CallSuper</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">()</span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Typedef注解"><a href="#Typedef注解" class="headerlink" title="Typedef注解"></a>Typedef注解</h3><ul>
-<li>使用 @IntDef 和 @StringDef 注解 可以创建整型和字符串的枚举注解来验证其他代码中使用的某些整型和字符串，可以保证代码中的某些常量整型或常量字符串是某些具体定义的常量集，这两个注解的位置只能是注解</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Typedef 注解的定义</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ActionType</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_0</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_1</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_2</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Retention(RetentionPolicy.SOURCE)</span></span><br><span class="line">    <span class="meta">@IntDef(&#123;ACTION_TYPE_0,ACTION_TYPE_1,ACTION_TYPE_2&#125;)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="meta">@interface</span> ActionTypeDef&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="可访问性注解"><a href="#可访问性注解" class="headerlink" title="可访问性注解"></a>可访问性注解</h3><ul>
-<li>可访问性注解是 @VisibleForTesting 和 @Keep 可以表示方法、字段、类的可访问性<ul>
-<li>@VisibleForTesting：表示注解的某个代码块的可见性高于能够测试时需要的水平</li>
-<li>@Keep：表示被注解的代码块将不会被混淆。</li>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p>因简书不支持流程图，可以参考：<br><a href="https://www.runoob.com/markdown/md-advance.html">https://www.runoob.com/markdown/md-advance.html</a></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><ul>
+<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头 | 表头|</span><br><span class="line">| --- | --- |</span><br><span class="line">| 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 |</span><br></pre></td></tr></table></figure></li>
+<li>效果<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td>内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td>内容</td>
+</tr>
+</tbody></table>
+</li>
+<li>对齐方式<ul>
+<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br></pre></td></tr></table></figure></li>
+<li>效果<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">内容</td>
+<td align="right">内容</td>
+<td align="center">内容</td>
+</tr>
+<tr>
+<td align="left">内容</td>
+<td align="right">内容</td>
+<td align="center">内容</td>
+</tr>
+</tbody></table>
+<h2 id="网址、电子邮件地址"><a href="#网址、电子邮件地址" class="headerlink" title="网址、电子邮件地址"></a>网址、电子邮件地址</h2></li>
 </ul>
 </li>
+<li>语法<br> 将 URL 或电子邮件地址括在&lt;&gt;里</li>
+<li>效果<br><a href="https://www.google.com.hk/">https://www.google.com.hk/</a><br><a href="mailto:&#x74;&#x65;&#x73;&#116;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x74;&#x65;&#x73;&#116;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></li>
 </ul>
+<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。<br>字符|名称<br>–|–<br>| \ | 反斜杠<br>| * | 星号（asterisk） |<br>| _ | 下划线（underscore） |<br>| { } | 花括号（curly braces） |<br>| [ ] | 方括号（brackets） |<br>| &lt; &gt; | angle brackets |<br>| ( ) | 圆括号或括号（parentheses） |<br>| # | 井号（pound sign） |<br>| + | 加号（plus sign） |<br>| - | 减号（minus sign） (也叫连字符 hyphen) |<br>| . | 句点（dot） |<br>| ! | 感叹号（exclamation mark） |</p>
 ]]></content>
       <categories>
-        <category>Android</category>
+        <category>Markdown</category>
       </categories>
       <tags>
-        <tag>注解</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>EventBus使用方式</title>
-    <url>/2022/05/09/2022/android/EventBus%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
-<li>Android开发中 EventBus的使用<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><a href="https://s1.ax1x.com/2022/05/09/OGINDg.png"><img src="https://s1.ax1x.com/2022/05/09/OGINDg.png" alt="示意图.png"></a><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1></li>
-<li>一套 <font color= "#c85863" >Android / Java</font> 事件订阅 / 发布框架，由greenrobot团队开源，它的出现简化了应用程序内各个组件之间进行通信的复杂度，尤其是碎片之间进行通信的问题。</li>
-</ul>
-<h1 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h1><h2 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">eventbus : <span class="string">&#x27;org.greenrobot:eventbus:3.2.0&#x27;</span></span><br></pre></td></tr></table></figure>
-<h2 id="注册、注销"><a href="#注册、注销" class="headerlink" title="注册、注销"></a>注册、注销</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onStart</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>.onStart();</span><br><span class="line">    EventBus.getDefault().register(<span class="built_in">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onDestroy</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>.onDestroy();</span><br><span class="line">     EventBus.getDefault().unregister(<span class="built_in">this</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="订阅者"><a href="#订阅者" class="headerlink" title="订阅者"></a>订阅者</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Subscribe(threadMode = ThreadMode.MAIN)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onUpDateEvent</span><span class="params">(BaseMessageEvent messageEvent )</span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="发布事件"><a href="#发布事件" class="headerlink" title="发布事件"></a>发布事件</h2><h3 id="普通事件"><a href="#普通事件" class="headerlink" title="普通事件"></a>普通事件</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">EventBus.getDefault().post(<span class="keyword">new</span> <span class="title class_">BaseMessageEvent</span>(<span class="string">&quot;&quot;</span>))</span><br></pre></td></tr></table></figure>
-<h3 id="粘性事件"><a href="#粘性事件" class="headerlink" title="粘性事件"></a>粘性事件</h3><ul>
-<li>黏性事件，就是指发送了该事件之后再订阅者依然能够接收到的事件。使用黏性事件的时候有两个地方需要做些修改。分别在发布和订阅中来使用。<h4 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">EventBus.getDefault().postSticky(<span class="keyword">new</span> <span class="title class_">BaseMessageEvent</span>(<span class="string">&quot;&quot;</span>));</span><br></pre></td></tr></table></figure>
-<h4 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Subscribe(threadMode = ThreadMode.MAIN , sticky = true)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onUpDateEvent</span><span class="params">(BaseMessageEvent messageEvent )</span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="获取事件"><a href="#获取事件" class="headerlink" title="获取事件"></a>获取事件</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">EventBus.getDefault().getStickyEvent(BaseMessageEvent.class);</span><br></pre></td></tr></table></figure>
-<h4 id="移除事件"><a href="#移除事件" class="headerlink" title="移除事件"></a>移除事件</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">EventBus.getDefault().removeStickyEvent(BaseMessageEvent.class);</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h2><ul>
-<li>即priority。它用来指定订阅方法的优先级，是一个整数类型的值，默认是0，值越大表示优先级越大。在某个事件被发布出来的时候，优先级较高的订阅方法会首先接受到事件。</li>
-<li>特别注意：<ul>
-<li> 订阅方法，需要与threadMode一致，并且优先级略高</li>
-<li> 优先级不会影响具有不同ThreadModes的订阅者的传递顺序</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Subscribe(threadMode = ThreadMode.POSTING , sticky = true, priority = 1)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onUpDateEvent</span><span class="params">(BaseMessageEvent messageEvent )</span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="取消事件传递"><a href="#取消事件传递" class="headerlink" title="取消事件传递"></a>取消事件传递</h1><ul>
-<li><p>事件的优先级越高接收的数据最快，所以当优先级不想分发事件给低级别的事件时，可以使用cancelEventDelivery （Object event）取消事件传递</p>
-</li>
-<li><p>注：当优先级更高的想取消事件传递时，只有当threadMode = ThreadMode.POSTING处于此状态才能取消事件传递有效。其他线程模型属性不行</p>
-</li>
-</ul>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>EventBus基本使用方式就介绍到这里，EventBus源码分析请看：<a href="#">Post not found: EventBus原理分析 EventBus源码分析</a></p>
-]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-      <tags>
-        <tag>EventBus</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -442,6 +523,132 @@
       </categories>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TouchBar中调节音量和亮度消失</title>
+    <url>/2022/10/27/2022/Mac%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/TouchBar%E4%B8%AD%E8%B0%83%E8%8A%82%E9%9F%B3%E9%87%8F%E5%92%8C%E4%BA%AE%E5%BA%A6%E6%B6%88%E5%A4%B1/</url>
+    <content><![CDATA[<h2 id="打开-Terminal，运行”killall-ControlStrip“，就可以了"><a href="#打开-Terminal，运行”killall-ControlStrip“，就可以了" class="headerlink" title="打开 Terminal，运行”killall ControlStrip“，就可以了"></a>打开 Terminal，运行”killall ControlStrip“，就可以了</h2><h3 id="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"><a href="#如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻" class="headerlink" title="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"></a><font color=#9dc2af>如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻</font></h3>]]></content>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android-如何使用注解进行代码检查</title>
+    <url>/2022/09/15/2022/android/Android-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E8%BF%9B%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5/</url>
+    <content><![CDATA[<h3 id="Nullness-注解"><a href="#Nullness-注解" class="headerlink" title="Nullness 注解"></a>Nullness 注解</h3><ul>
+<li>使用 Nullness 注解可以检查给定变量、参数和返回值是否允许 null值<ul>
+<li>@Nullable ：表示可以为 null 的变量、参数或返回值，</li>
+<li>@NonNull ：表示不可为 null 的变量、参数或返回值。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@NonNull</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> View <span class="title function_">onCreateView</span><span class="params">(String name, <span class="meta">@NonNull</span> Context context,<span class="meta">@NonNull</span> AttributeSet attrs)</span> &#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="资源注解"><a href="#资源注解" class="headerlink" title="资源注解"></a>资源注解</h3><ul>
+<li>资源注解的使用可使得在源码阶段让编辑器检查书写的不规范，一定程度上优化代码结构<ul>
+<li>@StringRes：      表示检查是否包含R.string引用</li>
+<li>@ColorRes：       表示检查是否包含R.color引用</li>
+<li>@ColorInt：       表示检查是否包含表示颜色的整型</li>
+<li>@DrawableRes：    表示检查是否包含R.drawable引用</li>
+<li>@DimenRes：       表示检查是否包含R.dimen引用</li>
+<li>@InterpolatorRes：表示检查是否包含插值器引用</li>
+</ul>
+</li>
+</ul>
+<h3 id="线程注解"><a href="#线程注解" class="headerlink" title="线程注解"></a>线程注解</h3><ul>
+<li>线程注解可以检查某个方法是否从某个特定类型的线程中调用<ul>
+<li>@MainThread：表示主线程</li>
+<li>@UiThread：表示 UI 线程</li>
+<li>@WorkerThread：表示工作线程</li>
+<li>@BinderThread：表示Binder线程</li>
+<li>@AnyThread：表示任何一个线程</li>
+</ul>
+</li>
+</ul>
+<h3 id="值约束注解"><a href="#值约束注解" class="headerlink" title="值约束注解"></a>值约束注解</h3><ul>
+<li>使用值约束注解可验证传递的参数的值的合法性，可以借此指定参数的设置范围，可在一定程度上减少代码在主观程度上出现的错误<ul>
+<li>@IntRange：表示可以验证整型参数是否在指定范围内 </li>
+<li>@FloatRange：表示可以验证浮点型参数是否在指定范围内</li>
+<li>@Size：表示可以验证集合、数组、字符串参数是否在指定范围内，可指定最大值、最小值以及确切值</li>
+</ul>
+</li>
+</ul>
+<h3 id="权限注解"><a href="#权限注解" class="headerlink" title="权限注解"></a>权限注解</h3><ul>
+<li>权限注解 @RequiresPermission 可以验证方法调用方的权限，即当使用了权限注解的方法时会检查有没有指定的权限，如果没有则会提示要在 AndroidManifest.xml 文件中申明权限，如果是危险权限还有进行权限动态申请</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单个权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMessage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 全部权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(allOf = &#123;</span></span><br><span class="line"><span class="meta">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span></span><br><span class="line"><span class="meta">        Manifest.permission.READ_EXTERNAL_STORAGE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMesage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 某个权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(anyOf = &#123;</span></span><br><span class="line"><span class="meta">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span></span><br><span class="line"><span class="meta">        Manifest.permission.READ_EXTERNAL_STORAGE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMesage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="返回值注解"><a href="#返回值注解" class="headerlink" title="返回值注解"></a>返回值注解</h3><ul>
+<li>返回值注解 @CheckResult 会检查某个方法的返回值是否被使用，如果没有被使用，则会根据 suggest 配置建议使用相同公民没有返回值的另一个方法，如果返回值使用了，则和未加该注解的方法一样</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@CheckResult(suggest=&quot;#enforcePermission(String,int,int,String)&quot;)</span></span><br><span class="line"><span class="keyword">public</span>  <span class="type">int</span> <span class="title function_">checkPermission</span><span class="params">(<span class="meta">@NonNull</span> String permission, <span class="type">int</span> pid, <span class="type">int</span> uid)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CallSuper"><a href="#CallSuper" class="headerlink" title="CallSuper"></a>CallSuper</h3><ul>
+<li>使用 @CallSuper 注解会验证子类的重写方法是否调用父类的实现，这样约束的好处是可保证父类的实现不会修改，当然，如果不使用该注解，子类重写父类的方法可以不调用弗父类的默认实现</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 父类</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@CallSuper</span>注解的使用</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="comment">//使用@CallSuper注解，子类重写该方法时必须调用该方法</span></span><br><span class="line">    <span class="meta">@CallSuper</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">()</span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Typedef注解"><a href="#Typedef注解" class="headerlink" title="Typedef注解"></a>Typedef注解</h3><ul>
+<li>使用 @IntDef 和 @StringDef 注解 可以创建整型和字符串的枚举注解来验证其他代码中使用的某些整型和字符串，可以保证代码中的某些常量整型或常量字符串是某些具体定义的常量集，这两个注解的位置只能是注解</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Typedef 注解的定义</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ActionType</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_0</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_1</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_2</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Retention(RetentionPolicy.SOURCE)</span></span><br><span class="line">    <span class="meta">@IntDef(&#123;ACTION_TYPE_0,ACTION_TYPE_1,ACTION_TYPE_2&#125;)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="meta">@interface</span> ActionTypeDef&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="可访问性注解"><a href="#可访问性注解" class="headerlink" title="可访问性注解"></a>可访问性注解</h3><ul>
+<li>可访问性注解是 @VisibleForTesting 和 @Keep 可以表示方法、字段、类的可访问性<ul>
+<li>@VisibleForTesting：表示注解的某个代码块的可见性高于能够测试时需要的水平</li>
+<li>@Keep：表示被注解的代码块将不会被混淆。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>注解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>EventBus使用方式</title>
+    <url>/2022/05/09/2022/android/EventBus%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
+<li>Android开发中 EventBus的使用<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><a href="https://s1.ax1x.com/2022/05/09/OGINDg.png"><img src="https://s1.ax1x.com/2022/05/09/OGINDg.png" alt="示意图.png"></a><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1></li>
+<li>一套 <font color= "#c85863" >Android / Java</font> 事件订阅 / 发布框架，由greenrobot团队开源，它的出现简化了应用程序内各个组件之间进行通信的复杂度，尤其是碎片之间进行通信的问题。</li>
+</ul>
+<h1 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h1><h2 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">eventbus : <span class="string">&#x27;org.greenrobot:eventbus:3.2.0&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="注册、注销"><a href="#注册、注销" class="headerlink" title="注册、注销"></a>注册、注销</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onStart</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>.onStart();</span><br><span class="line">    EventBus.getDefault().register(<span class="built_in">this</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onDestroy</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">super</span>.onDestroy();</span><br><span class="line">     EventBus.getDefault().unregister(<span class="built_in">this</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="订阅者"><a href="#订阅者" class="headerlink" title="订阅者"></a>订阅者</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Subscribe(threadMode = ThreadMode.MAIN)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onUpDateEvent</span><span class="params">(BaseMessageEvent messageEvent )</span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="发布事件"><a href="#发布事件" class="headerlink" title="发布事件"></a>发布事件</h2><h3 id="普通事件"><a href="#普通事件" class="headerlink" title="普通事件"></a>普通事件</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">EventBus.getDefault().post(<span class="keyword">new</span> <span class="title class_">BaseMessageEvent</span>(<span class="string">&quot;&quot;</span>))</span><br></pre></td></tr></table></figure>
+<h3 id="粘性事件"><a href="#粘性事件" class="headerlink" title="粘性事件"></a>粘性事件</h3><ul>
+<li>黏性事件，就是指发送了该事件之后再订阅者依然能够接收到的事件。使用黏性事件的时候有两个地方需要做些修改。分别在发布和订阅中来使用。<h4 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">EventBus.getDefault().postSticky(<span class="keyword">new</span> <span class="title class_">BaseMessageEvent</span>(<span class="string">&quot;&quot;</span>));</span><br></pre></td></tr></table></figure>
+<h4 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Subscribe(threadMode = ThreadMode.MAIN , sticky = true)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onUpDateEvent</span><span class="params">(BaseMessageEvent messageEvent )</span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="获取事件"><a href="#获取事件" class="headerlink" title="获取事件"></a>获取事件</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">EventBus.getDefault().getStickyEvent(BaseMessageEvent.class);</span><br></pre></td></tr></table></figure>
+<h4 id="移除事件"><a href="#移除事件" class="headerlink" title="移除事件"></a>移除事件</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">EventBus.getDefault().removeStickyEvent(BaseMessageEvent.class);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h2><ul>
+<li>即priority。它用来指定订阅方法的优先级，是一个整数类型的值，默认是0，值越大表示优先级越大。在某个事件被发布出来的时候，优先级较高的订阅方法会首先接受到事件。</li>
+<li>特别注意：<ul>
+<li> 订阅方法，需要与threadMode一致，并且优先级略高</li>
+<li> 优先级不会影响具有不同ThreadModes的订阅者的传递顺序</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Subscribe(threadMode = ThreadMode.POSTING , sticky = true, priority = 1)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onUpDateEvent</span><span class="params">(BaseMessageEvent messageEvent )</span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="取消事件传递"><a href="#取消事件传递" class="headerlink" title="取消事件传递"></a>取消事件传递</h1><ul>
+<li><p>事件的优先级越高接收的数据最快，所以当优先级不想分发事件给低级别的事件时，可以使用cancelEventDelivery （Object event）取消事件传递</p>
+</li>
+<li><p>注：当优先级更高的想取消事件传递时，只有当threadMode = ThreadMode.POSTING处于此状态才能取消事件传递有效。其他线程模型属性不行</p>
+</li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>EventBus基本使用方式就介绍到这里，EventBus源码分析请看：<a href="#">Post not found: EventBus原理分析 EventBus源码分析</a></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>EventBus</tag>
       </tags>
   </entry>
   <entry>
@@ -735,6 +942,63 @@
       </tags>
   </entry>
   <entry>
+    <title>Java-链表（单向、循环、双向）</title>
+    <url>/2022/03/23/2022/java/java-%E9%93%BE%E8%A1%A8/</url>
+    <content><![CDATA[<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>什么是链表？链表是一种常见的基础数据结构，是一种线性表，但并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针来做关联，同时链表也分为，单链表、双链表、循环链表。</p>
+<h2 id="单链表（单向链表）"><a href="#单链表（单向链表）" class="headerlink" title="单链表（单向链表）"></a>单链表（单向链表）</h2><h3 id="单链表由两个部分构成"><a href="#单链表由两个部分构成" class="headerlink" title="单链表由两个部分构成"></a>单链表由两个部分构成</h3><ul>
+<li>  DATA域：数据域、用来存储数据元素</li>
+<li>  NEXT域：指针域、用来指向下一个节点</li>
+</ul>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RB60.jpg" alt="单链表"></p>
+<p>链表与数组类似,也可以进行查找、插入、删除、读取等操作,但是由于链表与数组的特性不同,导致不同操作的复杂度也不同</p>
+<h3 id="查找方式"><a href="#查找方式" class="headerlink" title="查找方式"></a>查找方式</h3><ul>
+<li><p>  从头节点进入,开始比对节点的值,如果不同则通过指针进入下一个节点</p>
+</li>
+<li><p>  重复上面的动作,直到找到相同的值,或者节点的指针指向null</p>
+</li>
+<li><p>  时间复杂度为O(n)</p>
+</li>
+</ul>
+<h3 id="插入或删除方式"><a href="#插入或删除方式" class="headerlink" title="插入或删除方式"></a>插入或删除方式</h3><p>链表与数组最大的不同就在于删除、插入的性能优势,由于链表是非连续的内存,所以不用像数组一样在插入、删除操作的时候需要进行大面积的成员位移,比如在a、b节点之间插入一个新节点c,链表只需要做</p>
+<ul>
+<li>  a断开指向b的指针，将指针指向c</li>
+<li>  c节点将指针指向b，完毕（这才是魅力所在）</li>
+</ul>
+<p>插入或删除只需要调整指针即可。</p>
+<p>时间复杂度为O(1)</p>
+<p>下面看下链表的插入、删除操作</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3Rgk4.jpg" alt="单链表插入&amp;删除"></p>
+<h3 id="读取方式"><a href="#读取方式" class="headerlink" title="读取方式"></a>读取方式</h3><p>链表与数组相比读取性能是有劣势的。数组读取操作性能高效是因为它是一块连续内存，读取通过寻址公式就可以快速定位，链表非连续内存必须通过指针节点一一遍历。</p>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ul>
+<li>  撤销功能,这种操作最多见于各种文本、图形编辑器中,撤销重做在编辑器场景下属于家常便饭,单向链表由于良好的删除特性在这个场景很适用</li>
+<li>  图片队列上传</li>
+<li>  …</li>
+</ul>
+<h2 id="双链表（双向链表）"><a href="#双链表（双向链表）" class="headerlink" title="双链表（双向链表）"></a>双链表（双向链表）</h2><p>我们看到双向链表多了一个新的指针prev指向节点的前一个节点,当然由于多了一个指针,所以双向链表要更占内存</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RfpR.jpg" alt="双链表"></p>
+<h3 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h3><p>向双链表中插入一个新节点，需要通过调整两次prev指向和两次next指向来完成。如下图所示，X为新节点，将A1的next指向X，将X的next指向A2，将A2的prev指向X，将X的prev指向A1即可。</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RT0O.jpg" alt="双链表插入"></p>
+<h3 id="删除操作"><a href="#删除操作" class="headerlink" title="删除操作"></a>删除操作</h3><p>从双链表中删除一个节点，需要通过调整一次prev指向和一次next指向来完成。如下图所示，删除A2节点，将A1的next指向A3，将A3的 prev指向A1即可。</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RqtH.jpg" alt="双链表删除"></p>
+<h2 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h2><p>环形链表又叫循环链表，本文讲述的是单向环形链表，其与单链表的唯一区别是尾部节点的next不再为空，则是指向了头部节点，这样便形成了一个环。</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RxjP.jpg" alt="循环链表"></p>
+<p>小结：链表与数组的的不同之处在于数组是一块连续的内存,而链表可以不是连续内存,链表的节点与节点之间通过指针来联系的</p>
+<ul>
+<li>  数组静态分配内存，链表动态分配内存</li>
+<li>  数组在内存中连续，链表不连续</li>
+<li>  数组元素在栈区，链表元素在堆区</li>
+<li>  数组利用下标定位，时间复杂度为O(1)，链表定位元素时间复杂度O(n)</li>
+<li>  数组插入或删除元素的时间复杂度O(n)，链表的时间复杂度O(1)</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java高级特性-反射</title>
     <url>/2022/03/30/2022/java/java-%E5%8F%8D%E5%B0%84/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p> <strong><a href="https://baike.baidu.com/item/JAVA%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/6015990">JAVA反射机制</a>是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。</strong></p>
@@ -935,270 +1199,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-链表（单向、循环、双向）</title>
-    <url>/2022/03/23/2022/java/java-%E9%93%BE%E8%A1%A8/</url>
-    <content><![CDATA[<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>什么是链表？链表是一种常见的基础数据结构，是一种线性表，但并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针来做关联，同时链表也分为，单链表、双链表、循环链表。</p>
-<h2 id="单链表（单向链表）"><a href="#单链表（单向链表）" class="headerlink" title="单链表（单向链表）"></a>单链表（单向链表）</h2><h3 id="单链表由两个部分构成"><a href="#单链表由两个部分构成" class="headerlink" title="单链表由两个部分构成"></a>单链表由两个部分构成</h3><ul>
-<li>  DATA域：数据域、用来存储数据元素</li>
-<li>  NEXT域：指针域、用来指向下一个节点</li>
-</ul>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RB60.jpg" alt="单链表"></p>
-<p>链表与数组类似,也可以进行查找、插入、删除、读取等操作,但是由于链表与数组的特性不同,导致不同操作的复杂度也不同</p>
-<h3 id="查找方式"><a href="#查找方式" class="headerlink" title="查找方式"></a>查找方式</h3><ul>
-<li><p>  从头节点进入,开始比对节点的值,如果不同则通过指针进入下一个节点</p>
-</li>
-<li><p>  重复上面的动作,直到找到相同的值,或者节点的指针指向null</p>
-</li>
-<li><p>  时间复杂度为O(n)</p>
-</li>
-</ul>
-<h3 id="插入或删除方式"><a href="#插入或删除方式" class="headerlink" title="插入或删除方式"></a>插入或删除方式</h3><p>链表与数组最大的不同就在于删除、插入的性能优势,由于链表是非连续的内存,所以不用像数组一样在插入、删除操作的时候需要进行大面积的成员位移,比如在a、b节点之间插入一个新节点c,链表只需要做</p>
-<ul>
-<li>  a断开指向b的指针，将指针指向c</li>
-<li>  c节点将指针指向b，完毕（这才是魅力所在）</li>
-</ul>
-<p>插入或删除只需要调整指针即可。</p>
-<p>时间复杂度为O(1)</p>
-<p>下面看下链表的插入、删除操作</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3Rgk4.jpg" alt="单链表插入&amp;删除"></p>
-<h3 id="读取方式"><a href="#读取方式" class="headerlink" title="读取方式"></a>读取方式</h3><p>链表与数组相比读取性能是有劣势的。数组读取操作性能高效是因为它是一块连续内存，读取通过寻址公式就可以快速定位，链表非连续内存必须通过指针节点一一遍历。</p>
-<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ul>
-<li>  撤销功能,这种操作最多见于各种文本、图形编辑器中,撤销重做在编辑器场景下属于家常便饭,单向链表由于良好的删除特性在这个场景很适用</li>
-<li>  图片队列上传</li>
-<li>  …</li>
-</ul>
-<h2 id="双链表（双向链表）"><a href="#双链表（双向链表）" class="headerlink" title="双链表（双向链表）"></a>双链表（双向链表）</h2><p>我们看到双向链表多了一个新的指针prev指向节点的前一个节点,当然由于多了一个指针,所以双向链表要更占内存</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RfpR.jpg" alt="双链表"></p>
-<h3 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h3><p>向双链表中插入一个新节点，需要通过调整两次prev指向和两次next指向来完成。如下图所示，X为新节点，将A1的next指向X，将X的next指向A2，将A2的prev指向X，将X的prev指向A1即可。</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RT0O.jpg" alt="双链表插入"></p>
-<h3 id="删除操作"><a href="#删除操作" class="headerlink" title="删除操作"></a>删除操作</h3><p>从双链表中删除一个节点，需要通过调整一次prev指向和一次next指向来完成。如下图所示，删除A2节点，将A1的next指向A3，将A3的 prev指向A1即可。</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RqtH.jpg" alt="双链表删除"></p>
-<h2 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h2><p>环形链表又叫循环链表，本文讲述的是单向环形链表，其与单链表的唯一区别是尾部节点的next不再为空，则是指向了头部节点，这样便形成了一个环。</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RxjP.jpg" alt="循环链表"></p>
-<p>小结：链表与数组的的不同之处在于数组是一块连续的内存,而链表可以不是连续内存,链表的节点与节点之间通过指针来联系的</p>
-<ul>
-<li>  数组静态分配内存，链表动态分配内存</li>
-<li>  数组在内存中连续，链表不连续</li>
-<li>  数组元素在栈区，链表元素在堆区</li>
-<li>  数组利用下标定位，时间复杂度为O(1)，链表定位元素时间复杂度O(n)</li>
-<li>  数组插入或删除元素的时间复杂度O(n)，链表的时间复杂度O(1)</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown 语法</title>
-    <url>/2022/03/17/2022/Markdown/markdown-grammar/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> &ensp; Markdown语法的基本使用</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><img src="https://s3.bmp.ovh/imgs/2022/03/5e25d102468382c1.jpg"></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>MarkDown基础语法使用参考</p>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><ul>
-<li><p>语法<br>一级标题用一个#，二级标题## ….最多展示六级标题</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">###### 五级标题</span><br><span class="line">####### 六级标题</span><br></pre></td></tr></table></figure></li>
-<li><p>效果</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
-</ul>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><ul>
-<li><p>加粗</p>
-<ul>
-<li>语法<br> 要加粗的文本前后用两个 ** 符号包裹起来</li>
-<li>效果<br> <strong>我是加粗后的字体</strong></li>
-</ul>
-</li>
-<li><p>斜体</p>
-<ul>
-<li>语法<br> 要倾斜的文本前后用一个 * 符号包裹起来</li>
-<li>效果</li>
-<li>我是倾斜后的字体*</li>
-</ul>
-</li>
-<li><p>斜体&amp;加粗<br>*语法<br>  要倾斜并且加粗的文本前后用三个 ***  符号包裹起来<br>*效果</p>
-</li>
-<li><p><strong>我是倾斜并且加粗后的字体</strong>*</p>
-</li>
-<li><p>删除线</p>
-<ul>
-<li>语法<br> 要加删除线的文本左右分别用两个 ~~ 符号包起来</li>
-<li>效果<br><del>我是添加删除线的字体</del></li>
-</ul>
-</li>
-</ul>
-<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><ul>
-<li><p>空格</p>
-<ul>
-<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">插入一个空格 &amp;nbsp;   </span><br><span class="line">插入两个空格 &amp;ensp;  </span><br><span class="line">插入四个空格 &amp;emsp;   </span><br></pre></td></tr></table></figure>
-或者使用全角空格。即：在全角输入状态下直接使用空格键就ok了</li>
-<li>效果<br>&nbsp;   插入一个空格文本<br>&ensp;   插入两个空格文本<br>&emsp;   插入四个空格文本<br>　　全角按了两个空格文本😎</li>
-</ul>
-</li>
-<li><p>换行</p>
-<ul>
-<li>语法<br>使用 HTML 的 <code>&lt;br&gt;</code> 标签来实现换行。</li>
-<li>效果<br>我在这里需要换行啦<br>精彩内容在仍在继续…</li>
-</ul>
-</li>
-</ul>
-<h2 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h2><ul>
-<li><p>单个段落块引用</p>
-<ul>
-<li>语法<br>要创建单个段落块引用，请在段落前添加一个 &gt; 符号。</li>
-<li>效果<blockquote>
-<p>我是单个段落引用</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>多个段落块引用</p>
-<ul>
-<li>语法<br> 要创建单个段落块引用，请在段落前与段落之间添加 &gt; 符号。</li>
-<li>效果<blockquote>
-<p>我是段落一</p>
-<p>我是段落二</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>嵌套块引用</p>
-</li>
-<li><p>语法<br> 在要嵌套的段落前添加一个 &gt;&gt; 符号。</p>
-</li>
-<li><p>效果</p>
-<blockquote>
-<p>我是段落一</p>
-<blockquote>
-<p>我是段落二并且需要嵌套引用</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>无限嵌套引用…</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</li>
-</ul>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ul>
-<li><p>有序列表</p>
-<ul>
-<li><p>语法<br> 列表项前添加数字并紧跟一个英文句点 1. 2. 3. 等等 …</p>
-</li>
-<li><p>效果</p>
-</li>
-</ul>
-<p>1.有序列表<br>2.有序列表<br>3.有序列表<br>…</p>
-</li>
-<li><p>无序列表<br>为了兼容，请不要在同一个列表中混用不同的分隔符，最好选定一种分隔符使用</p>
-<ul>
-<li>语法<br>无序列表用 - + * 任意一种都可以</li>
-<li>效果<ul>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ul>
-<li><p>代码块高亮</p>
-<ul>
-<li>语法</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">（```）java</span><br><span class="line">  这个写代码块</span><br><span class="line">  注意：（```）这个写法是防止符号被转义，正常写去掉（）只写 ``` 就好了</span><br><span class="line">（```）</span><br></pre></td></tr></table></figure>
-<ul>
-<li>效果<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String args[])</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>单行代码块</p>
-<ul>
-<li>语法<br>单行代码块使用 `  `包裹</li>
-<li>效果<br> <code> System.out.println(&quot;Hello World!&quot;); </code></li>
-</ul>
-</li>
-</ul>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><ul>
-<li>语法<br>[图片上传中…(image-9df155-1642153968831)]<br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</li>
-<li>效果<br><img src="https://s3.bmp.ovh/imgs/2022/03/3c7eea0313d87901.jpeg"></li>
-</ul>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><ul>
-<li>语法<br>为了兼容性，请在分隔线的前后均添加空白行<br>三个以上 — 或 ***</li>
-<li>效果</li>
-</ul>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><ul>
-<li>语法<br>要创建链接，请将链接文本括在方括号（例如 [Duck Duck Go]）中，后面紧跟着括在圆括号中的 URL（例如 (<a href="https://duckduckgo.com/">https://duckduckgo.com</a>) ）。</li>
-<li>效果<br>My favorite search engine is <a href="https://duckduckgo.com/">Duck Duck Go</a>.</li>
-</ul>
-<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p>因简书不支持流程图，可以参考：<br><a href="https://www.runoob.com/markdown/md-advance.html">https://www.runoob.com/markdown/md-advance.html</a></p>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><ul>
-<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头 | 表头|</span><br><span class="line">| --- | --- |</span><br><span class="line">| 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 |</span><br></pre></td></tr></table></figure></li>
-<li>效果<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>内容</td>
-<td>内容</td>
-</tr>
-<tr>
-<td>内容</td>
-<td>内容</td>
-</tr>
-</tbody></table>
-</li>
-<li>对齐方式<ul>
-<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br></pre></td></tr></table></figure></li>
-<li>效果<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">内容</td>
-<td align="right">内容</td>
-<td align="center">内容</td>
-</tr>
-<tr>
-<td align="left">内容</td>
-<td align="right">内容</td>
-<td align="center">内容</td>
-</tr>
-</tbody></table>
-<h2 id="网址、电子邮件地址"><a href="#网址、电子邮件地址" class="headerlink" title="网址、电子邮件地址"></a>网址、电子邮件地址</h2></li>
-</ul>
-</li>
-<li>语法<br> 将 URL 或电子邮件地址括在&lt;&gt;里</li>
-<li>效果<br><a href="https://www.google.com.hk/">https://www.google.com.hk/</a><br><a href="mailto:&#116;&#x65;&#x73;&#116;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#116;&#x65;&#x73;&#116;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></li>
-</ul>
-<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。<br>字符|名称<br>–|–<br>| \ | 反斜杠<br>| * | 星号（asterisk） |<br>| _ | 下划线（underscore） |<br>| { } | 花括号（curly braces） |<br>| [ ] | 方括号（brackets） |<br>| &lt; &gt; | angle brackets |<br>| ( ) | 圆括号或括号（parentheses） |<br>| # | 井号（pound sign） |<br>| + | 加号（plus sign） |<br>| - | 减号（minus sign） (也叫连字符 hyphen) |<br>| . | 句点（dot） |<br>| ! | 感叹号（exclamation mark） |</p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
       </tags>
   </entry>
 </search>
