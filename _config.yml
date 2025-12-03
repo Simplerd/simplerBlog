@@ -118,8 +118,15 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
+<<<<<<< Updated upstream
   type: git
   repository:
     github: https://github.com/Simplerd/Simplerd.github.io.git
     gitee: https://gitee.com/simplerj/simpler.git
   branch: master
+=======
+  type: ''
+  repo: https://github.com/Simplerd/simplerBlog.git
+  branch: master
+
+>>>>>>> Stashed changes
