@@ -33,213 +33,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown 语法</title>
-    <url>/2022/03/17/2022/Markdown/markdown-grammar/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> &ensp; Markdown语法的基本使用</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><img src="https://s3.bmp.ovh/imgs/2022/03/5e25d102468382c1.jpg"></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>MarkDown基础语法使用参考</p>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><ul>
-<li><p>语法<br>一级标题用一个#，二级标题## ….最多展示六级标题</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">###### 五级标题</span><br><span class="line">####### 六级标题</span><br></pre></td></tr></table></figure></li>
-<li><p>效果</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
-</ul>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><ul>
-<li><p>加粗</p>
-<ul>
-<li>语法<br> 要加粗的文本前后用两个 ** 符号包裹起来</li>
-<li>效果<br> <strong>我是加粗后的字体</strong></li>
-</ul>
-</li>
-<li><p>斜体</p>
-<ul>
-<li>语法<br> 要倾斜的文本前后用一个 * 符号包裹起来</li>
-<li>效果</li>
-<li>我是倾斜后的字体*</li>
-</ul>
-</li>
-<li><p>斜体&amp;加粗<br>*语法<br>  要倾斜并且加粗的文本前后用三个 ***  符号包裹起来<br>*效果</p>
-</li>
-<li><p><strong>我是倾斜并且加粗后的字体</strong>*</p>
-</li>
-<li><p>删除线</p>
-<ul>
-<li>语法<br> 要加删除线的文本左右分别用两个 ~~ 符号包起来</li>
-<li>效果<br><del>我是添加删除线的字体</del></li>
-</ul>
-</li>
-</ul>
-<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><ul>
-<li><p>空格</p>
-<ul>
-<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">插入一个空格 &amp;nbsp;   </span><br><span class="line">插入两个空格 &amp;ensp;  </span><br><span class="line">插入四个空格 &amp;emsp;   </span><br></pre></td></tr></table></figure>
-或者使用全角空格。即：在全角输入状态下直接使用空格键就ok了</li>
-<li>效果<br>&nbsp;   插入一个空格文本<br>&ensp;   插入两个空格文本<br>&emsp;   插入四个空格文本<br>　　全角按了两个空格文本😎</li>
-</ul>
-</li>
-<li><p>换行</p>
-<ul>
-<li>语法<br>使用 HTML 的 <code>&lt;br&gt;</code> 标签来实现换行。</li>
-<li>效果<br>我在这里需要换行啦<br>精彩内容在仍在继续…</li>
-</ul>
-</li>
-</ul>
-<h2 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h2><ul>
-<li><p>单个段落块引用</p>
-<ul>
-<li>语法<br>要创建单个段落块引用，请在段落前添加一个 &gt; 符号。</li>
-<li>效果<blockquote>
-<p>我是单个段落引用</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>多个段落块引用</p>
-<ul>
-<li>语法<br> 要创建单个段落块引用，请在段落前与段落之间添加 &gt; 符号。</li>
-<li>效果<blockquote>
-<p>我是段落一</p>
-<p>我是段落二</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>嵌套块引用</p>
-</li>
-<li><p>语法<br> 在要嵌套的段落前添加一个 &gt;&gt; 符号。</p>
-</li>
-<li><p>效果</p>
-<blockquote>
-<p>我是段落一</p>
-<blockquote>
-<p>我是段落二并且需要嵌套引用</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>无限嵌套引用…</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</li>
-</ul>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ul>
-<li><p>有序列表</p>
-<ul>
-<li><p>语法<br> 列表项前添加数字并紧跟一个英文句点 1. 2. 3. 等等 …</p>
-</li>
-<li><p>效果</p>
-</li>
-</ul>
-<p>1.有序列表<br>2.有序列表<br>3.有序列表<br>…</p>
-</li>
-<li><p>无序列表<br>为了兼容，请不要在同一个列表中混用不同的分隔符，最好选定一种分隔符使用</p>
-<ul>
-<li>语法<br>无序列表用 - + * 任意一种都可以</li>
-<li>效果<ul>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ul>
-<li><p>代码块高亮</p>
-<ul>
-<li>语法</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">（```）java</span><br><span class="line">  这个写代码块</span><br><span class="line">  注意：（```）这个写法是防止符号被转义，正常写去掉（）只写 ``` 就好了</span><br><span class="line">（```）</span><br></pre></td></tr></table></figure>
-<ul>
-<li>效果<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String args[])</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>单行代码块</p>
-<ul>
-<li>语法<br>单行代码块使用 `  `包裹</li>
-<li>效果<br> <code> System.out.println(&quot;Hello World!&quot;); </code></li>
-</ul>
-</li>
-</ul>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><ul>
-<li>语法<br>[图片上传中…(image-9df155-1642153968831)]<br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</li>
-<li>效果<br><img src="https://s3.bmp.ovh/imgs/2022/03/3c7eea0313d87901.jpeg"></li>
-</ul>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><ul>
-<li>语法<br>为了兼容性，请在分隔线的前后均添加空白行<br>三个以上 — 或 ***</li>
-<li>效果</li>
-</ul>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><ul>
-<li>语法<br>要创建链接，请将链接文本括在方括号（例如 [Duck Duck Go]）中，后面紧跟着括在圆括号中的 URL（例如 (<a href="https://duckduckgo.com/">https://duckduckgo.com</a>) ）。</li>
-<li>效果<br>My favorite search engine is <a href="https://duckduckgo.com/">Duck Duck Go</a>.</li>
-</ul>
-<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p>因简书不支持流程图，可以参考：<br><a href="https://www.runoob.com/markdown/md-advance.html">https://www.runoob.com/markdown/md-advance.html</a></p>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><ul>
-<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头 | 表头|</span><br><span class="line">| --- | --- |</span><br><span class="line">| 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 |</span><br></pre></td></tr></table></figure></li>
-<li>效果<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>内容</td>
-<td>内容</td>
-</tr>
-<tr>
-<td>内容</td>
-<td>内容</td>
-</tr>
-</tbody></table>
-</li>
-<li>对齐方式<ul>
-<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br></pre></td></tr></table></figure></li>
-<li>效果<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">内容</td>
-<td align="right">内容</td>
-<td align="center">内容</td>
-</tr>
-<tr>
-<td align="left">内容</td>
-<td align="right">内容</td>
-<td align="center">内容</td>
-</tr>
-</tbody></table>
-<h2 id="网址、电子邮件地址"><a href="#网址、电子邮件地址" class="headerlink" title="网址、电子邮件地址"></a>网址、电子邮件地址</h2></li>
-</ul>
-</li>
-<li>语法<br> 将 URL 或电子邮件地址括在&lt;&gt;里</li>
-<li>效果<br><a href="https://www.google.com.hk/">https://www.google.com.hk/</a><br><a href="mailto:&#x74;&#x65;&#x73;&#116;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x74;&#x65;&#x73;&#116;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></li>
-</ul>
-<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。<br>字符|名称<br>–|–<br>| \ | 反斜杠<br>| * | 星号（asterisk） |<br>| _ | 下划线（underscore） |<br>| { } | 花括号（curly braces） |<br>| [ ] | 方括号（brackets） |<br>| &lt; &gt; | angle brackets |<br>| ( ) | 圆括号或括号（parentheses） |<br>| # | 井号（pound sign） |<br>| + | 加号（plus sign） |<br>| - | 减号（minus sign） (也叫连字符 hyphen) |<br>| . | 句点（dot） |<br>| ! | 感叹号（exclamation mark） |</p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git常用命令</title>
     <url>/2022/03/17/2022/Git/git-command/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Git 命令前，先了解几个关键词的概念</p>
@@ -534,6 +327,513 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown 语法</title>
+    <url>/2022/03/17/2022/Markdown/markdown-grammar/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> &ensp; Markdown语法的基本使用</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><img src="https://s3.bmp.ovh/imgs/2022/03/5e25d102468382c1.jpg"></p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>MarkDown基础语法使用参考</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><ul>
+<li><p>语法<br>一级标题用一个#，二级标题## ….最多展示六级标题</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">###### 五级标题</span><br><span class="line">####### 六级标题</span><br></pre></td></tr></table></figure></li>
+<li><p>效果</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
+</ul>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><ul>
+<li><p>加粗</p>
+<ul>
+<li>语法<br> 要加粗的文本前后用两个 ** 符号包裹起来</li>
+<li>效果<br> <strong>我是加粗后的字体</strong></li>
+</ul>
+</li>
+<li><p>斜体</p>
+<ul>
+<li>语法<br> 要倾斜的文本前后用一个 * 符号包裹起来</li>
+<li>效果</li>
+<li>我是倾斜后的字体*</li>
+</ul>
+</li>
+<li><p>斜体&amp;加粗<br>*语法<br>  要倾斜并且加粗的文本前后用三个 ***  符号包裹起来<br>*效果</p>
+</li>
+<li><p><strong>我是倾斜并且加粗后的字体</strong>*</p>
+</li>
+<li><p>删除线</p>
+<ul>
+<li>语法<br> 要加删除线的文本左右分别用两个 ~~ 符号包起来</li>
+<li>效果<br><del>我是添加删除线的字体</del></li>
+</ul>
+</li>
+</ul>
+<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><ul>
+<li><p>空格</p>
+<ul>
+<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">插入一个空格 &amp;nbsp;   </span><br><span class="line">插入两个空格 &amp;ensp;  </span><br><span class="line">插入四个空格 &amp;emsp;   </span><br></pre></td></tr></table></figure>
+或者使用全角空格。即：在全角输入状态下直接使用空格键就ok了</li>
+<li>效果<br>&nbsp;   插入一个空格文本<br>&ensp;   插入两个空格文本<br>&emsp;   插入四个空格文本<br>　　全角按了两个空格文本😎</li>
+</ul>
+</li>
+<li><p>换行</p>
+<ul>
+<li>语法<br>使用 HTML 的 <code>&lt;br&gt;</code> 标签来实现换行。</li>
+<li>效果<br>我在这里需要换行啦<br>精彩内容在仍在继续…</li>
+</ul>
+</li>
+</ul>
+<h2 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h2><ul>
+<li><p>单个段落块引用</p>
+<ul>
+<li>语法<br>要创建单个段落块引用，请在段落前添加一个 &gt; 符号。</li>
+<li>效果<blockquote>
+<p>我是单个段落引用</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>多个段落块引用</p>
+<ul>
+<li>语法<br> 要创建单个段落块引用，请在段落前与段落之间添加 &gt; 符号。</li>
+<li>效果<blockquote>
+<p>我是段落一</p>
+<p>我是段落二</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>嵌套块引用</p>
+</li>
+<li><p>语法<br> 在要嵌套的段落前添加一个 &gt;&gt; 符号。</p>
+</li>
+<li><p>效果</p>
+<blockquote>
+<p>我是段落一</p>
+<blockquote>
+<p>我是段落二并且需要嵌套引用</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>无限嵌套引用…</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ul>
+<li><p>有序列表</p>
+<ul>
+<li><p>语法<br> 列表项前添加数字并紧跟一个英文句点 1. 2. 3. 等等 …</p>
+</li>
+<li><p>效果</p>
+</li>
+</ul>
+<p>1.有序列表<br>2.有序列表<br>3.有序列表<br>…</p>
+</li>
+<li><p>无序列表<br>为了兼容，请不要在同一个列表中混用不同的分隔符，最好选定一种分隔符使用</p>
+<ul>
+<li>语法<br>无序列表用 - + * 任意一种都可以</li>
+<li>效果<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ul>
+<li><p>代码块高亮</p>
+<ul>
+<li>语法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">（```）java</span><br><span class="line">  这个写代码块</span><br><span class="line">  注意：（```）这个写法是防止符号被转义，正常写去掉（）只写 ``` 就好了</span><br><span class="line">（```）</span><br></pre></td></tr></table></figure>
+<ul>
+<li>效果<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String args[])</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>单行代码块</p>
+<ul>
+<li>语法<br>单行代码块使用 `  `包裹</li>
+<li>效果<br> <code> System.out.println(&quot;Hello World!&quot;); </code></li>
+</ul>
+</li>
+</ul>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><ul>
+<li>语法<br>[图片上传中…(image-9df155-1642153968831)]<br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</li>
+<li>效果<br><img src="https://s3.bmp.ovh/imgs/2022/03/3c7eea0313d87901.jpeg"></li>
+</ul>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><ul>
+<li>语法<br>为了兼容性，请在分隔线的前后均添加空白行<br>三个以上 — 或 ***</li>
+<li>效果</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><ul>
+<li>语法<br>要创建链接，请将链接文本括在方括号（例如 [Duck Duck Go]）中，后面紧跟着括在圆括号中的 URL（例如 (<a href="https://duckduckgo.com/">https://duckduckgo.com</a>) ）。</li>
+<li>效果<br>My favorite search engine is <a href="https://duckduckgo.com/">Duck Duck Go</a>.</li>
+</ul>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p>因简书不支持流程图，可以参考：<br><a href="https://www.runoob.com/markdown/md-advance.html">https://www.runoob.com/markdown/md-advance.html</a></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><ul>
+<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头 | 表头|</span><br><span class="line">| --- | --- |</span><br><span class="line">| 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 |</span><br></pre></td></tr></table></figure></li>
+<li>效果<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td>内容</td>
+</tr>
+<tr>
+<td>内容</td>
+<td>内容</td>
+</tr>
+</tbody></table>
+</li>
+<li>对齐方式<ul>
+<li>语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 | 内容 |</span><br></pre></td></tr></table></figure></li>
+<li>效果<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">内容</td>
+<td align="right">内容</td>
+<td align="center">内容</td>
+</tr>
+<tr>
+<td align="left">内容</td>
+<td align="right">内容</td>
+<td align="center">内容</td>
+</tr>
+</tbody></table>
+<h2 id="网址、电子邮件地址"><a href="#网址、电子邮件地址" class="headerlink" title="网址、电子邮件地址"></a>网址、电子邮件地址</h2></li>
+</ul>
+</li>
+<li>语法<br> 将 URL 或电子邮件地址括在&lt;&gt;里</li>
+<li>效果<br><a href="https://www.google.com.hk/">https://www.google.com.hk/</a><br><a href="mailto:&#116;&#101;&#115;&#x74;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#116;&#101;&#115;&#x74;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></li>
+</ul>
+<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。<br>字符|名称<br>–|–<br>| \ | 反斜杠<br>| * | 星号（asterisk） |<br>| _ | 下划线（underscore） |<br>| { } | 花括号（curly braces） |<br>| [ ] | 方括号（brackets） |<br>| &lt; &gt; | angle brackets |<br>| ( ) | 圆括号或括号（parentheses） |<br>| # | 井号（pound sign） |<br>| + | 加号（plus sign） |<br>| - | 减号（minus sign） (也叫连字符 hyphen) |<br>| . | 句点（dot） |<br>| ! | 感叹号（exclamation mark） |</p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LinkedHashMap-原理分析</title>
+    <url>/2022/03/23/2022/java/LinkedHashMap-%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>LinkedHashMap 是如何做到LruCache ，下面我们从源码中看一看</p>
+<h2 id="LinkedHashMap构造函数"><a href="#LinkedHashMap构造函数" class="headerlink" title="LinkedHashMap构造函数"></a>LinkedHashMap构造函数</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an empty insertion-ordered &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance</span></span><br><span class="line"><span class="comment">     * with the specified initial capacity and load factor.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  initialCapacity the initial capacity</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  loadFactor      the load factor</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IllegalArgumentException if the initial capacity is negative</span></span><br><span class="line"><span class="comment">     *         or the load factor is nonpositive</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">(<span class="type">int</span> initialCapacity, <span class="type">float</span> loadFactor)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(initialCapacity, loadFactor);</span><br><span class="line">        accessOrder = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an empty insertion-ordered &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance</span></span><br><span class="line"><span class="comment">     * with the specified initial capacity and a default load factor (0.75).</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  initialCapacity the initial capacity</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IllegalArgumentException if the initial capacity is negative</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">(<span class="type">int</span> initialCapacity)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(initialCapacity);</span><br><span class="line">        accessOrder = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an empty insertion-ordered &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance</span></span><br><span class="line"><span class="comment">     * with the default initial capacity (16) and load factor (0.75).</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>();</span><br><span class="line">        accessOrder = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an insertion-ordered &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance with</span></span><br><span class="line"><span class="comment">     * the same mappings as the specified map.  The &lt;tt&gt;LinkedHashMap&lt;/tt&gt;</span></span><br><span class="line"><span class="comment">     * instance is created with a default load factor (0.75) and an initial</span></span><br><span class="line"><span class="comment">     * capacity sufficient to hold the mappings in the specified map.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  m the map whose mappings are to be placed in this map</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> NullPointerException if the specified map is null</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">(Map&lt;? extends K, ? extends V&gt; m)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>();</span><br><span class="line">        accessOrder = <span class="literal">false</span>;</span><br><span class="line">        putMapEntries(m, <span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an empty &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance with the</span></span><br><span class="line"><span class="comment">     * specified initial capacity, load factor and ordering mode.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  initialCapacity the initial capacity</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  loadFactor      the load factor</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  accessOrder     the ordering mode - &lt;tt&gt;true&lt;/tt&gt; for</span></span><br><span class="line"><span class="comment">     *         access-order, &lt;tt&gt;false&lt;/tt&gt; for insertion-order</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IllegalArgumentException if the initial capacity is negative</span></span><br><span class="line"><span class="comment">     *         or the load factor is nonpositive</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">(<span class="type">int</span> initialCapacity,</span></span><br><span class="line"><span class="params">                         <span class="type">float</span> loadFactor,</span></span><br><span class="line"><span class="params">                         <span class="type">boolean</span> accessOrder)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(initialCapacity, loadFactor);</span><br><span class="line">        <span class="built_in">this</span>.accessOrder = accessOrder;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>先分别看下这三个参数：int initialCapacity、float loadFactor, boolean accessOrder</p>
+<p>initialCapacity：表示是初始数组长度</p>
+<p>loadFactor：表示负载因子，表示数组的元素数量/数组长度超过这个比例，数组就要扩容</p>
+<p>accessOrder：false： 基于插入顺序(默认) true： 基于访问顺序</p>
+<p>关于插入顺序，访问顺序可以看我的另一篇文章： <a href="#">Post not found: java-链表 java链表(单向，循环、双向)</a></p>
+<p>下面看下LinkedHashMap 最常用的get，put 以及afterNodeAccess、afterNodeInsertion方法</p>
+<h2 id="get"><a href="#get" class="headerlink" title="get"></a>get</h2><p>LinkedHashMap 重写了get方法，实现了LrucaChe</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.</span></span><br><span class="line"><span class="comment">More formally, if this map contains a mapping from a key k to a value v such that (key==null ? k==null : key.equals(k)), then this method returns v; otherwise it returns null. (There can be at most one such mapping.)</span></span><br><span class="line"><span class="comment">A return value of null does not necessarily indicate that the map contains no mapping for the key; it&#x27;s also possible that the map explicitly maps the key to null. The containsKey operation may be used to distinguish these two cases*/</span></span><br><span class="line">&lt;P&gt;</span><br><span class="line">返回指定键映射到的值，如果此映射不包含该键的映射，则返回<span class="literal">null</span>。</span><br><span class="line">更正式地说，如果这个映射包含从键k到值v的映射，使得（键==<span class="literal">null</span>？k==<span class="literal">null</span>:key.equals（k）），那么这个方法返回v；否则返回<span class="literal">null</span>。（最多可以有一个这样的映射。）</span><br><span class="line">空映射不一定包含空映射的返回值；映射也可能显式地将密钥映射为<span class="literal">null</span>。containsKey操作可用于区分这两种情况</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"><span class="keyword">public</span> V <span class="title function_">get</span><span class="params">(Object key)</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt; e;</span><br><span class="line">        <span class="keyword">if</span> ((e = getNode(hash(key), key)) == <span class="literal">null</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="comment">// accessOder为true时，被访问的节点被置于双向链表尾部</span></span><br><span class="line">        <span class="keyword">if</span> (accessOrder)</span><br><span class="line">            afterNodeAccess(e);</span><br><span class="line">        <span class="keyword">return</span> e.value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key.*/</span></span><br><span class="line">&lt;p&gt;返回指定键映射到的值，如果此映射不包含该键的映射，则返回defaultValue。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> V <span class="title function_">getOrDefault</span><span class="params">(Object key, V defaultValue)</span> &#123;</span><br><span class="line">       Node&lt;K,V&gt; e;</span><br><span class="line">       <span class="keyword">if</span> ((e = getNode(hash(key), key)) == <span class="literal">null</span>)</span><br><span class="line">           <span class="keyword">return</span> defaultValue;</span><br><span class="line">       <span class="keyword">if</span> (accessOrder)</span><br><span class="line">           afterNodeAccess(e);</span><br><span class="line">       <span class="keyword">return</span> e.value;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>可以看到在get 方法中调用了afterNodeAccess方法，下面看下这个方法干了什么</p>
+<h2 id="afterNodeAccess"><a href="#afterNodeAccess" class="headerlink" title="afterNodeAccess"></a>afterNodeAccess</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">afterNodeAccess</span><span class="params">(Node&lt;K,V&gt; e)</span> &#123; <span class="comment">// move node to last</span></span><br><span class="line">    <span class="comment">// 用 last 表示插入 e 前的尾节点</span></span><br><span class="line">    <span class="comment">// 插入 e 后 e 是尾节点, 所以也是表示 e 的前一个节点</span></span><br><span class="line">    LinkedHashMap.Entry&lt;K,V&gt; last;</span><br><span class="line">    <span class="comment">//如果是访问序，且当前节点并不是尾节点</span></span><br><span class="line">    <span class="comment">//将该节点置为双向链表的尾部</span></span><br><span class="line">    <span class="keyword">if</span> (accessOrder &amp;&amp; (last = tail) != e) &#123;</span><br><span class="line">        <span class="comment">// p: 当前节点</span></span><br><span class="line">        <span class="comment">// b: 前一个节点</span></span><br><span class="line">        <span class="comment">// a: 后一个节点</span></span><br><span class="line">        LinkedHashMap.Entry&lt;K,V&gt; p =</span><br><span class="line">            (LinkedHashMap.Entry&lt;K,V&gt;)e, b = p.before, a = p.after;</span><br><span class="line">        <span class="comment">// 因为要移动到链尾，所以先至尾指针为空</span></span><br><span class="line">        p.after = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//如果前面没有元素，则p之前为头结点，直接让a成为头结点</span></span><br><span class="line">        <span class="keyword">if</span> (b == <span class="literal">null</span>)</span><br><span class="line">            head = a;</span><br><span class="line">        <span class="comment">// 否则b的尾指针指向a</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            b.after = a;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (a != <span class="literal">null</span>)</span><br><span class="line">        <span class="comment">//如果a不为空，则a的头指针指向b</span></span><br><span class="line">            a.before = b;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        <span class="comment">//否则 p之前就为尾指针，则另b成为尾指针</span></span><br><span class="line">            last = b;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (last == <span class="literal">null</span>)</span><br><span class="line">            head = p;</span><br><span class="line">        <span class="comment">//如果双向链表中只有p一个节点，则令p即为头结点，也为尾节点</span></span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">//否则 将p插入链尾</span></span><br><span class="line">            p.before = last;</span><br><span class="line">            last.after = p;</span><br><span class="line">        &#125;</span><br><span class="line">        tail = p;</span><br><span class="line">        ++modCount;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="put"><a href="#put" class="headerlink" title="put"></a>put</h2><p>LinkedHashMap 并没有重写HashMap的 put 方法，调用的还是HashMap得put方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Associates the specified value with the specified key in this map.</span></span><br><span class="line"><span class="comment">     * If the map previously contained a mapping for the key, the old</span></span><br><span class="line"><span class="comment">     * value is replaced.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key key with which the specified value is to be associated</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> value value to be associated with the specified key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> the previous value associated with &lt;tt&gt;key&lt;/tt&gt;, or</span></span><br><span class="line"><span class="comment">     *         &lt;tt&gt;null&lt;/tt&gt; if there was no mapping for &lt;tt&gt;key&lt;/tt&gt;.</span></span><br><span class="line"><span class="comment">     *         (A &lt;tt&gt;null&lt;/tt&gt; return can also indicate that the map</span></span><br><span class="line"><span class="comment">     *         previously associated &lt;tt&gt;null&lt;/tt&gt; with &lt;tt&gt;key&lt;/tt&gt;.)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> V <span class="title function_">put</span><span class="params">(K key, V value)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> putVal(hash(key), key, value, <span class="literal">false</span>, <span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Implements Map.put and related methods.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> hash hash for key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key the key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> value the value to put</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> onlyIfAbsent if true, don&#x27;t change existing value</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> evict if false, the table is in creation mode.</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> previous value, or null if none</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">final</span> V <span class="title function_">putVal</span><span class="params">(<span class="type">int</span> hash, K key, V value, <span class="type">boolean</span> onlyIfAbsent,</span></span><br><span class="line"><span class="params">                   <span class="type">boolean</span> evict)</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; p; <span class="type">int</span> n, i;</span><br><span class="line">        <span class="keyword">if</span> ((tab = table) == <span class="literal">null</span> || (n = tab.length) == <span class="number">0</span>)</span><br><span class="line">            n = (tab = resize()).length;</span><br><span class="line">        <span class="keyword">if</span> ((p = tab[i = (n - <span class="number">1</span>) &amp; hash]) == <span class="literal">null</span>)</span><br><span class="line">            tab[i] = newNode(hash, key, value, <span class="literal">null</span>);</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            Node&lt;K,V&gt; e; K k;</span><br><span class="line">            <span class="keyword">if</span> (p.hash == hash &amp;&amp;</span><br><span class="line">                ((k = p.key) == key || (key != <span class="literal">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line">                e = p;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (p <span class="keyword">instanceof</span> TreeNode)</span><br><span class="line">                e = ((TreeNode&lt;K,V&gt;)p).putTreeVal(<span class="built_in">this</span>, tab, hash, key, value);</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">binCount</span> <span class="operator">=</span> <span class="number">0</span>; ; ++binCount) &#123;</span><br><span class="line">                    <span class="keyword">if</span> ((e = p.next) == <span class="literal">null</span>) &#123;</span><br><span class="line">                        p.next = newNode(hash, key, value, <span class="literal">null</span>);</span><br><span class="line">                        <span class="keyword">if</span> (binCount &gt;= TREEIFY_THRESHOLD - <span class="number">1</span>) <span class="comment">// -1 for 1st</span></span><br><span class="line">                            treeifyBin(tab, hash);</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span> (e.hash == hash &amp;&amp;</span><br><span class="line">                        ((k = e.key) == key || (key != <span class="literal">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    p = e;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (e != <span class="literal">null</span>) &#123; <span class="comment">// existing mapping for key</span></span><br><span class="line">                <span class="type">V</span> <span class="variable">oldValue</span> <span class="operator">=</span> e.value;</span><br><span class="line">                <span class="keyword">if</span> (!onlyIfAbsent || oldValue == <span class="literal">null</span>)</span><br><span class="line">                    e.value = value;</span><br><span class="line">                afterNodeAccess(e);</span><br><span class="line">                <span class="keyword">return</span> oldValue;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ++modCount;</span><br><span class="line">        <span class="keyword">if</span> (++size &gt; threshold)</span><br><span class="line">            resize();</span><br><span class="line">        afterNodeInsertion(evict);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>此外HashMap的putVal()方法，还调用了afterNodeInsertion()方法，</p>
+<h2 id="afterNodeInsertion"><a href="#afterNodeInsertion" class="headerlink" title="afterNodeInsertion"></a>afterNodeInsertion</h2><p>当插入数据时，将双向链表的头结点移除，这几个方法让LinkedHashMap实现了LRU算法。不过removeEldestEntry()默认是返回false的，需要子类继承重写removeEldestEntry()方法。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">afterNodeInsertion</span><span class="params">(<span class="type">boolean</span> evict)</span> &#123; <span class="comment">// possibly remove eldest</span></span><br><span class="line">        LinkedHashMap.Entry&lt;K,V&gt; first;</span><br><span class="line">        <span class="keyword">if</span> (evict &amp;&amp; (first = head) != <span class="literal">null</span> &amp;&amp; removeEldestEntry(first)) &#123;</span><br><span class="line">            <span class="type">K</span> <span class="variable">key</span> <span class="operator">=</span> first.key;</span><br><span class="line">            removeNode(hash(key), key, <span class="literal">null</span>, <span class="literal">false</span>, <span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>LinkedHashMap的remove()方法也是调用的HashMap的remove()方法，</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Removes the mapping for the specified key from this map if present.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  key key whose mapping is to be removed from the map</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> the previous value associated with &lt;tt&gt;key&lt;/tt&gt;, or</span></span><br><span class="line"><span class="comment">     *         &lt;tt&gt;null&lt;/tt&gt; if there was no mapping for &lt;tt&gt;key&lt;/tt&gt;.</span></span><br><span class="line"><span class="comment">     *         (A &lt;tt&gt;null&lt;/tt&gt; return can also indicate that the map</span></span><br><span class="line"><span class="comment">     *         previously associated &lt;tt&gt;null&lt;/tt&gt; with &lt;tt&gt;key&lt;/tt&gt;.)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> V <span class="title function_">remove</span><span class="params">(Object key)</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt; e;</span><br><span class="line">        <span class="keyword">return</span> (e = removeNode(hashLkey), key, <span class="literal">null</span>, <span class="literal">false</span>, <span class="literal">true</span>)) == <span class="literal">null</span> ?</span><br><span class="line">            <span class="literal">null</span> : e.value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Implements Map.remove and related methods.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> hash hash for key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key the key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> value the value to match if matchValue, else ignored</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> matchValue if true only remove if value is equal</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> movable if false do not move other nodes while removing</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> the node, or null if none</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">final</span> Node&lt;K,V&gt; <span class="title function_">removeNode</span><span class="params">(<span class="type">int</span> hash, Object key, Object value,</span></span><br><span class="line"><span class="params">                               <span class="type">boolean</span> matchValue, <span class="type">boolean</span> movable)</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; p; <span class="type">int</span> n, index;</span><br><span class="line">        <span class="keyword">if</span> ((tab = table) != <span class="literal">null</span> &amp;&amp; (n = tab.length) &gt; <span class="number">0</span> &amp;&amp;</span><br><span class="line">            (p = tab[index = (n - <span class="number">1</span>) &amp; hash]) != <span class="literal">null</span>) &#123;</span><br><span class="line">            Node&lt;K,V&gt; node = <span class="literal">null</span>, e; K k; V v;</span><br><span class="line">            <span class="keyword">if</span> (p.hash == hash &amp;&amp;</span><br><span class="line">                ((k = p.key) == key || (key != <span class="literal">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line">                node = p;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> ((e = p.next) != <span class="literal">null</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (p <span class="keyword">instanceof</span> TreeNode)</span><br><span class="line">                    node = ((TreeNode&lt;K,V&gt;)p).getTreeNode(hash, key);</span><br><span class="line">                <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">do</span> &#123;</span><br><span class="line">                        <span class="keyword">if</span> (e.hash == hash &amp;&amp;</span><br><span class="line">                            ((k = e.key) == key ||</span><br><span class="line">                             (key != <span class="literal">null</span> &amp;&amp; key.equals(k)))) &#123;</span><br><span class="line">                            node = e;</span><br><span class="line">                            <span class="keyword">break</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                        p = e;</span><br><span class="line">                    &#125; <span class="keyword">while</span> ((e = e.next) != <span class="literal">null</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (node != <span class="literal">null</span> &amp;&amp; (!matchValue || (v = node.value) == value ||</span><br><span class="line">                                 (value != <span class="literal">null</span> &amp;&amp; value.equals(v)))) &#123;</span><br><span class="line">                <span class="keyword">if</span> (node <span class="keyword">instanceof</span> TreeNode)</span><br><span class="line">                    ((TreeNode&lt;K,V&gt;)node).removeTreeNode(<span class="built_in">this</span>, tab, movable);</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span> (node == p)</span><br><span class="line">                    tab[index] = node.next;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    p.next = node.next;</span><br><span class="line">                ++modCount;</span><br><span class="line">                --size;</span><br><span class="line">                afterNodeRemoval(node);</span><br><span class="line">                <span class="keyword">return</span> node;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结：</p>
+<ul>
+<li>  LinkedHashMap 继承 HashMap，拥有 HashMap 的功能</li>
+<li>  LinkedHashMap 维护了两个数据结构，一是 HashMap 的结构，二是用来做迭代的双向链表</li>
+<li>  LinkedHashMap 独特的迭代器设计和一些函数的重写，导致迭代器按双向链表迭代，并且若没有设置 accessOrder，则按插入顺序迭代，否则，按访问顺序迭代</li>
+<li>  通过重写removeEldestEntry可以实现 LruCache 的功能</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java高级特性-反射</title>
+    <url>/2022/03/30/2022/java/java-%E5%8F%8D%E5%B0%84/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p> <strong><a href="https://baike.baidu.com/item/JAVA%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/6015990">JAVA反射机制</a>是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。</strong></p>
+<h1 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h1><p>Android中最熟悉的反射，莫过于Json数据的转换，例如网络数据，数据库数据和类之间的相互转化。使用反射机制可以直接创建对象，方便代码管理。</p>
+<h1 id="相关类"><a href="#相关类" class="headerlink" title="相关类"></a>相关类</h1><p><a href="https://developer.android.google.cn/reference/java/lang/Class">. Class</a></p>
+<ul>
+<li>class类下部分常用方法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">翻译</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#forName(java.lang.String,%20boolean,%20java.lang.ClassLoader)">forName(String className)</a></td>
+<td align="center">加载参数指定的类，并且初始化它。</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#cast(java.lang.Object)">cast</a></td>
+<td align="center">对象转换成代表类或是接口的对象</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#cast(java.lang.Object)">getClasses()</a></td>
+<td align="center">返回一个数组，数组中包含该类中所有公共类和接口类的对象</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getName()">getName()</a></td>
+<td align="center">获取类路径名称</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#newInstance()">newInstance</a></td>
+<td align="center">创建类的实例</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getPackage()">getPackage()</a></td>
+<td align="center">获取类所在包</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getPackage()">getInterfaces()</a></td>
+<td align="center">确定此对象所表示的类或接口实现的接口</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getSuperclass()">getSuperclass()</a></td>
+<td align="center">获得当前类继承的父类的名字</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getClassLoader()">getClassLoader()</a></td>
+<td align="center">获取类加载器</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredClasses()">getDeclaredClasses()</a></td>
+<td align="center">返回一个数组，数组中包含该类中所有类和接口类的对象</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Class类下相关属性方法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">翻译</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getField(java.lang.String)">getField(String name)</a></td>
+<td align="center">获取某个公有的属性对象</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getFields()">getFields()</a></td>
+<td align="center">获取所有公有的属性对象</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredField(java.lang.String)">getDeclaredField(String name)</a>)</td>
+<td align="center">获取某个私有属性对象</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredFields()">getDeclaredFields()</a></td>
+<td align="center">获取所有私有属性对象</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Class 类下相关注解方法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">翻译</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredAnnotations()">getDeclaredAnnotations()</a></td>
+<td align="center">返回对应类下所有注解对象</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredAnnotation(java.lang.Class%3CA%3E)">getDeclaredAnnotation(Class<A> annotationClass)</a></td>
+<td align="center">返回对应类中与参数类型匹配的所有注解对象</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getAnnotation(java.lang.Class%3CA%3E)">getAnnotation(Class<A> annotationClass)</a></td>
+<td align="center">返回对应类中与参数类型匹配的公有注解对象</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getAnnotations()">getAnnotations ()</a></td>
+<td align="center">返回对应类中所有公有注解对象</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Class 类下其它相关方法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">翻译</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getMethods()">getMethods()</a></td>
+<td align="center">返回该类所有公有的方法</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getMethod(java.lang.String,%20java.lang.Class%3C?%3E...)">getMethod (String name, Class…&lt;?&gt; parameterTypes)</a></td>
+<td align="center">返回该类某个公有方法</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredMethod(java.lang.String,%20java.lang.Class%3C?%3E...)">getDeclaredMethod(String name, Class…&lt;?&gt; parameterTypes)</a></td>
+<td align="center">返回该类某个方法</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredMethods()">getDeclaredMethods()</a></td>
+<td align="center">返回该类所有方法</td>
+</tr>
+</tbody></table>
+<p><a href="https://developer.android.google.cn/reference/java/lang/reflect/Field">. Method</a></p>
+<ul>
+<li>Method类下部分常用方法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">翻译</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/reflect/Method#invoke(java.lang.Object,%20java.lang.Object...)">invoke(Object obj, Object… args)</a></td>
+<td align="center">传递object对象及参数调用该对象对应的方法</td>
+</tr>
+</tbody></table>
+<p><a href="https://developer.android.google.cn/reference/java/lang/reflect/Field">. Field</a></p>
+<ul>
+<li>Field类下部分常用方法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">翻译</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/reflect/Field#get(java.lang.Object)">get(Object obj)</a></td>
+<td align="center">获得obj中对应的属性值</td>
+</tr>
+<tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/reflect/Field#set(java.lang.Object,%20java.lang.Object)">set(Object obj, Object value)</a></td>
+<td align="center">设置obj中对应属性值</td>
+</tr>
+</tbody></table>
+<p><a href="https://developer.android.google.cn/reference/java/lang/reflect/Constructor">. Constructor</a></p>
+<ul>
+<li>Constructor类下部分常用方法</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">方法名</th>
+<th align="center">翻译</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/reflect/Constructor#newInstance(java.lang.Object...)">newInstance(Object… initargs)</a></td>
+<td align="center">根据传递的参数创建类的对象</td>
+</tr>
+</tbody></table>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><ul>
+<li>反射实体类<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">GloryOfKings</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String role;</span><br><span class="line">    <span class="keyword">private</span> String skills;</span><br><span class="line">    <span class="keyword">private</span> String explain;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">GloryOfKings</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">GloryOfKings</span><span class="params">(String role, String skills)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.role = role;</span><br><span class="line">        <span class="built_in">this</span>.skills = skills;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getRole</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> role;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setRole</span><span class="params">(String role)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.role = role;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getSkills</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> skills;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setSkills</span><span class="params">(String skills)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.skills = skills;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setExplain</span><span class="params">(String explain)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.explain = explain;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getExplain</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> explain;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String <span class="title function_">week</span><span class="params">(<span class="type">int</span> flag)</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">string</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">switch</span> (flag) &#123;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.monday:</span><br><span class="line">                string = <span class="string">&quot;天气晴朗&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.tuesday:</span><br><span class="line">                string = <span class="string">&quot;多云&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Wednesday:</span><br><span class="line">                string = <span class="string">&quot;微风&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Thursday:</span><br><span class="line">                string = <span class="string">&quot;阵风6级&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Friday:</span><br><span class="line">                string = <span class="string">&quot;中雨&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Saturday:</span><br><span class="line">                string = <span class="string">&quot;大雨&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Sunday:</span><br><span class="line">                string = <span class="string">&quot;晴朗&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                string = <span class="string">&quot;-.-&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> string;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>逻辑封装类<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Reflect</span> &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 反射-创建对象（三种方式：.class、new MyClass().getClass，Class.forName(&quot;类的全路径&quot;)）</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">newInstance</span><span class="params">(<span class="type">int</span> flag)</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">outMessage</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">switch</span> (flag) &#123;</span><br><span class="line">                <span class="keyword">case</span> FlagSource.newInstanceOne:</span><br><span class="line">                    Class&lt;GloryOfKings&gt; cls = GloryOfKings.class;</span><br><span class="line">                    <span class="type">GloryOfKings</span> <span class="variable">gloryOfKings</span> <span class="operator">=</span> cls.newInstance();</span><br><span class="line">                    gloryOfKings.setExplain(<span class="string">&quot;创建对象方式- GloryOfKings.class&quot;</span>);</span><br><span class="line">                    gloryOfKings.setRole(<span class="string">&quot;李元芳&quot;</span>);</span><br><span class="line">                    gloryOfKings.setSkills(<span class="string">&quot;利刃风暴&quot;</span>);</span><br><span class="line">                    outMessage = gloryOfKings.toString();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> FlagSource.newInstanceTwo:</span><br><span class="line">                    Class&lt;? <span class="keyword">extends</span> <span class="title class_">GloryOfKings</span>&gt; cls1 = <span class="keyword">new</span> <span class="title class_">GloryOfKings</span>().getClass();</span><br><span class="line">                    <span class="type">GloryOfKings</span> <span class="variable">gloryOfKings1</span> <span class="operator">=</span> cls1.newInstance();</span><br><span class="line">                    gloryOfKings1.setExplain(<span class="string">&quot;创建对象方式- new GloryOfKings().getClass()&quot;</span>);</span><br><span class="line">                    gloryOfKings1.setRole(<span class="string">&quot;后羿&quot;</span>);</span><br><span class="line">                    gloryOfKings1.setSkills(<span class="string">&quot;灼日之矢”&quot;</span>);</span><br><span class="line">                    outMessage = gloryOfKings1.toString();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> FlagSource.newInstanceThree:</span><br><span class="line">                    Class&lt;?&gt; cls2 = Class.forName(<span class="string">&quot;com.linked.business.reflect.GloryOfKings&quot;</span>);</span><br><span class="line">                    <span class="type">GloryOfKings</span> <span class="variable">gloryOfKings2</span> <span class="operator">=</span> (GloryOfKings) cls2.newInstance();</span><br><span class="line">                    gloryOfKings2.setExplain(<span class="string">&quot;创建对象方式- Class.forName()&quot;</span>);</span><br><span class="line">                    gloryOfKings2.setRole(<span class="string">&quot;诸葛亮&quot;</span>);</span><br><span class="line">                    gloryOfKings2.setSkills(<span class="string">&quot;时空穿梭”&quot;</span>);</span><br><span class="line">                    outMessage = gloryOfKings2.toString();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(outMessage);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 反射-私有构造方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">construction</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; cls = Class.forName(<span class="string">&quot;com.linked.business.reflect.GloryOfKings&quot;</span>);</span><br><span class="line">            Constructor&lt;?&gt; constructor = cls.getDeclaredConstructor(String.class, String.class);</span><br><span class="line">            constructor.setAccessible(<span class="literal">true</span>);</span><br><span class="line">            <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> constructor.newInstance(<span class="string">&quot; 反射-设置私有构造方法：名称&quot;</span>, <span class="string">&quot; 反射-获取私有构造方法：福利&quot;</span>);</span><br><span class="line">            <span class="type">GloryOfKings</span> <span class="variable">go</span> <span class="operator">=</span> (GloryOfKings) obj;</span><br><span class="line">            System.out.println(<span class="string">&quot;反射-获取私有构造方法&quot;</span> + go);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 反射-私有属性</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">reflectDeclaredAttribute</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; cls = Class.forName(<span class="string">&quot;com.linked.business.reflect.GloryOfKings&quot;</span>);</span><br><span class="line">            <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> cls.newInstance();</span><br><span class="line">            <span class="type">Field</span> <span class="variable">field</span> <span class="operator">=</span> cls.getDeclaredField(<span class="string">&quot;TAG&quot;</span>);</span><br><span class="line">            field.setAccessible(<span class="literal">true</span>);</span><br><span class="line">            <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> (String) field.get(obj);</span><br><span class="line">            System.out.println(<span class="string">&quot;反射-获取私有属性&quot;</span> + str);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 反射-私有方法</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;将此对象的 accessible 标志设置为指示的布尔值。值为 true 则指示反射的对象在使用时应该取消 Java 语言访问检查。值为 false 则指示反射的对象应该实施 Java 语言访问检查;</span></span><br><span class="line"><span class="comment">     * 实际上setAccessible是启用和禁用访问安全检查的开关,并不是为true就能访问为false就不能访问 ；</span></span><br><span class="line"><span class="comment">     * 由于JDK的安全检查耗时较多.所以通过setAccessible(true)的方式关闭安全检查就可以达到提升反射速度的目的</span></span><br><span class="line"><span class="comment">     * &lt;/p&gt;</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">privateMethod</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; cls = Class.forName(<span class="string">&quot;com.linked.business.reflect.GloryOfKings&quot;</span>);</span><br><span class="line">            <span class="type">Method</span> <span class="variable">method</span> <span class="operator">=</span> cls.getDeclaredMethod(<span class="string">&quot;week&quot;</span>, <span class="type">int</span>.class);</span><br><span class="line">            method.setAccessible(<span class="literal">true</span>);</span><br><span class="line">            <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> cls.newInstance();</span><br><span class="line">            <span class="comment">//invoke：传递object对象及参数调用该对象对应的方法</span></span><br><span class="line">            <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> (String) method.invoke(obj, FlagMethod.monday);</span><br><span class="line">            System.out.println(str);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>测试类<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ReflectTest</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Reflect.newInstance(FlagSource.newInstanceTwo);</span><br><span class="line">            Reflect.attribute();</span><br><span class="line">            Reflect.construction();</span><br><span class="line">            Reflect.privateMethod();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-链表（单向、循环、双向）</title>
+    <url>/2022/03/23/2022/java/java-%E9%93%BE%E8%A1%A8/</url>
+    <content><![CDATA[<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>什么是链表？链表是一种常见的基础数据结构，是一种线性表，但并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针来做关联，同时链表也分为，单链表、双链表、循环链表。</p>
+<h2 id="单链表（单向链表）"><a href="#单链表（单向链表）" class="headerlink" title="单链表（单向链表）"></a>单链表（单向链表）</h2><h3 id="单链表由两个部分构成"><a href="#单链表由两个部分构成" class="headerlink" title="单链表由两个部分构成"></a>单链表由两个部分构成</h3><ul>
+<li>  DATA域：数据域、用来存储数据元素</li>
+<li>  NEXT域：指针域、用来指向下一个节点</li>
+</ul>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RB60.jpg" alt="单链表"></p>
+<p>链表与数组类似,也可以进行查找、插入、删除、读取等操作,但是由于链表与数组的特性不同,导致不同操作的复杂度也不同</p>
+<h3 id="查找方式"><a href="#查找方式" class="headerlink" title="查找方式"></a>查找方式</h3><ul>
+<li><p>  从头节点进入,开始比对节点的值,如果不同则通过指针进入下一个节点</p>
+</li>
+<li><p>  重复上面的动作,直到找到相同的值,或者节点的指针指向null</p>
+</li>
+<li><p>  时间复杂度为O(n)</p>
+</li>
+</ul>
+<h3 id="插入或删除方式"><a href="#插入或删除方式" class="headerlink" title="插入或删除方式"></a>插入或删除方式</h3><p>链表与数组最大的不同就在于删除、插入的性能优势,由于链表是非连续的内存,所以不用像数组一样在插入、删除操作的时候需要进行大面积的成员位移,比如在a、b节点之间插入一个新节点c,链表只需要做</p>
+<ul>
+<li>  a断开指向b的指针，将指针指向c</li>
+<li>  c节点将指针指向b，完毕（这才是魅力所在）</li>
+</ul>
+<p>插入或删除只需要调整指针即可。</p>
+<p>时间复杂度为O(1)</p>
+<p>下面看下链表的插入、删除操作</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3Rgk4.jpg" alt="单链表插入&amp;删除"></p>
+<h3 id="读取方式"><a href="#读取方式" class="headerlink" title="读取方式"></a>读取方式</h3><p>链表与数组相比读取性能是有劣势的。数组读取操作性能高效是因为它是一块连续内存，读取通过寻址公式就可以快速定位，链表非连续内存必须通过指针节点一一遍历。</p>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ul>
+<li>  撤销功能,这种操作最多见于各种文本、图形编辑器中,撤销重做在编辑器场景下属于家常便饭,单向链表由于良好的删除特性在这个场景很适用</li>
+<li>  图片队列上传</li>
+<li>  …</li>
+</ul>
+<h2 id="双链表（双向链表）"><a href="#双链表（双向链表）" class="headerlink" title="双链表（双向链表）"></a>双链表（双向链表）</h2><p>我们看到双向链表多了一个新的指针prev指向节点的前一个节点,当然由于多了一个指针,所以双向链表要更占内存</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RfpR.jpg" alt="双链表"></p>
+<h3 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h3><p>向双链表中插入一个新节点，需要通过调整两次prev指向和两次next指向来完成。如下图所示，X为新节点，将A1的next指向X，将X的next指向A2，将A2的prev指向X，将X的prev指向A1即可。</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RT0O.jpg" alt="双链表插入"></p>
+<h3 id="删除操作"><a href="#删除操作" class="headerlink" title="删除操作"></a>删除操作</h3><p>从双链表中删除一个节点，需要通过调整一次prev指向和一次next指向来完成。如下图所示，删除A2节点，将A1的next指向A3，将A3的 prev指向A1即可。</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RqtH.jpg" alt="双链表删除"></p>
+<h2 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h2><p>环形链表又叫循环链表，本文讲述的是单向环形链表，其与单链表的唯一区别是尾部节点的next不再为空，则是指向了头部节点，这样便形成了一个环。</p>
+<p><img src="https://s1.ax1x.com/2022/03/24/q3RxjP.jpg" alt="循环链表"></p>
+<p>小结：链表与数组的的不同之处在于数组是一块连续的内存,而链表可以不是连续内存,链表的节点与节点之间通过指针来联系的</p>
+<ul>
+<li>  数组静态分配内存，链表动态分配内存</li>
+<li>  数组在内存中连续，链表不连续</li>
+<li>  数组元素在栈区，链表元素在堆区</li>
+<li>  数组利用下标定位，时间复杂度为O(1)，链表定位元素时间复杂度O(n)</li>
+<li>  数组插入或删除元素的时间复杂度O(n)，链表的时间复杂度O(1)</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Android-如何使用注解进行代码检查</title>
     <url>/2022/09/15/2022/android/Android-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E8%BF%9B%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5/</url>
     <content><![CDATA[<h3 id="Nullness-注解"><a href="#Nullness-注解" class="headerlink" title="Nullness 注解"></a>Nullness 注解</h3><ul>
@@ -649,6 +949,24 @@
       </categories>
       <tags>
         <tag>EventBus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LruCache-原理分析</title>
+    <url>/2022/03/24/2022/java/LruCache-%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<h1 id="1-LruCache原理是什么"><a href="#1-LruCache原理是什么" class="headerlink" title="1.LruCache原理是什么"></a>1.LruCache原理是什么</h1><p> LruCache 采用最近最少使用算法，设定一个缓存大小，当缓存达到这个大小之后，会将最老的数据移除，避免图片占用内存过大导致OOM。</p>
+<h1 id="2-Lrucache源码分析"><a href="#2-Lrucache源码分析" class="headerlink" title="2.Lrucache源码分析"></a>2.Lrucache源码分析</h1> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LruCache</span>&lt;K, V&gt; &#123;</span><br><span class="line">	<span class="comment">// 数据最终存在 LinkedHashMap 中</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> LinkedHashMap&lt;K, V&gt; map;</span><br><span class="line">	...</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">LruCache</span><span class="params">(<span class="type">int</span> maxSize)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (maxSize &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">IllegalArgumentException</span>(<span class="string">&quot;maxSize &lt;= 0&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">this</span>.maxSize = maxSize;</span><br><span class="line">		<span class="comment">// 创建一个LinkedHashMap，accessOrder 传true</span></span><br><span class="line">        <span class="built_in">this</span>.map = <span class="keyword">new</span> <span class="title class_">LinkedHashMap</span>&lt;K, V&gt;(<span class="number">0</span>, <span class="number">0.75f</span>, <span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
+<p>LruCache 构造方法里创建一个LinkedHashMap，accessOrder 参数传true，表示访问时重新排序，accessOrder 参数传false，表示插入时重新排序。（/* LruCache 核心工作原理就在此*/）</p>
+<p>插入顺序是什么意思？<br>按照对象插入的顺序进行排列，可以简单说按照插入的时间先后顺序排列。<br>依次放入1,2,3,4,5   那么按照插入顺序后LruCache中的对象顺序就是1,2,3,4,5</p>
+<p>那么访问顺序是什么意思呢？<br>访问顺序意思就是LruCache中被访问过的子对象会重新排序，那么意味着我们先依次排序进行对象缓存1,2,3,4,5<br>现阶段的对象顺序是1,2,3,4,5<br>如果现在内存使用了2号缓存，那么就表示2号被访问了，重新排序 2,1,3,4,5<br>如果现在内存再命中了4号缓存，那么就表示4号被访问了，重新排序 4,2,1,3,5<br>内存再命中了5号缓存，那么就表示4号被访问了，重新排序 5,4,2,1,3<br>…..<br>…..</p>
+<p>所以每次使用过的缓存都会被重新排到缓存队列的最前面。</p>
+<p>那么意味着，队列越后面的缓存就使用得越少，当缓存队列容量达到阀值后，再往队列中添加新缓存时则可以将队列最后面的使用次数最少的缓存依次移除，插入新缓存，达到Lru算法的效果。</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -881,324 +1199,6 @@
       </categories>
       <tags>
         <tag>Handler</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LinkedHashMap-原理分析</title>
-    <url>/2022/03/23/2022/java/LinkedHashMap-%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>LinkedHashMap 是如何做到LruCache ，下面我们从源码中看一看</p>
-<h2 id="LinkedHashMap构造函数"><a href="#LinkedHashMap构造函数" class="headerlink" title="LinkedHashMap构造函数"></a>LinkedHashMap构造函数</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an empty insertion-ordered &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance</span></span><br><span class="line"><span class="comment">     * with the specified initial capacity and load factor.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  initialCapacity the initial capacity</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  loadFactor      the load factor</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IllegalArgumentException if the initial capacity is negative</span></span><br><span class="line"><span class="comment">     *         or the load factor is nonpositive</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">(<span class="type">int</span> initialCapacity, <span class="type">float</span> loadFactor)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(initialCapacity, loadFactor);</span><br><span class="line">        accessOrder = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an empty insertion-ordered &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance</span></span><br><span class="line"><span class="comment">     * with the specified initial capacity and a default load factor (0.75).</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  initialCapacity the initial capacity</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IllegalArgumentException if the initial capacity is negative</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">(<span class="type">int</span> initialCapacity)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(initialCapacity);</span><br><span class="line">        accessOrder = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an empty insertion-ordered &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance</span></span><br><span class="line"><span class="comment">     * with the default initial capacity (16) and load factor (0.75).</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>();</span><br><span class="line">        accessOrder = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an insertion-ordered &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance with</span></span><br><span class="line"><span class="comment">     * the same mappings as the specified map.  The &lt;tt&gt;LinkedHashMap&lt;/tt&gt;</span></span><br><span class="line"><span class="comment">     * instance is created with a default load factor (0.75) and an initial</span></span><br><span class="line"><span class="comment">     * capacity sufficient to hold the mappings in the specified map.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  m the map whose mappings are to be placed in this map</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> NullPointerException if the specified map is null</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">(Map&lt;? extends K, ? extends V&gt; m)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>();</span><br><span class="line">        accessOrder = <span class="literal">false</span>;</span><br><span class="line">        putMapEntries(m, <span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Constructs an empty &lt;tt&gt;LinkedHashMap&lt;/tt&gt; instance with the</span></span><br><span class="line"><span class="comment">     * specified initial capacity, load factor and ordering mode.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  initialCapacity the initial capacity</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  loadFactor      the load factor</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  accessOrder     the ordering mode - &lt;tt&gt;true&lt;/tt&gt; for</span></span><br><span class="line"><span class="comment">     *         access-order, &lt;tt&gt;false&lt;/tt&gt; for insertion-order</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IllegalArgumentException if the initial capacity is negative</span></span><br><span class="line"><span class="comment">     *         or the load factor is nonpositive</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">LinkedHashMap</span><span class="params">(<span class="type">int</span> initialCapacity,</span></span><br><span class="line"><span class="params">                         <span class="type">float</span> loadFactor,</span></span><br><span class="line"><span class="params">                         <span class="type">boolean</span> accessOrder)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(initialCapacity, loadFactor);</span><br><span class="line">        <span class="built_in">this</span>.accessOrder = accessOrder;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>先分别看下这三个参数：int initialCapacity、float loadFactor, boolean accessOrder</p>
-<p>initialCapacity：表示是初始数组长度</p>
-<p>loadFactor：表示负载因子，表示数组的元素数量/数组长度超过这个比例，数组就要扩容</p>
-<p>accessOrder：false： 基于插入顺序(默认) true： 基于访问顺序</p>
-<p>关于插入顺序，访问顺序可以看我的另一篇文章： <a href="#">Post not found: java-链表 java链表(单向，循环、双向)</a></p>
-<p>下面看下LinkedHashMap 最常用的get，put 以及afterNodeAccess、afterNodeInsertion方法</p>
-<h2 id="get"><a href="#get" class="headerlink" title="get"></a>get</h2><p>LinkedHashMap 重写了get方法，实现了LrucaChe</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.</span></span><br><span class="line"><span class="comment">More formally, if this map contains a mapping from a key k to a value v such that (key==null ? k==null : key.equals(k)), then this method returns v; otherwise it returns null. (There can be at most one such mapping.)</span></span><br><span class="line"><span class="comment">A return value of null does not necessarily indicate that the map contains no mapping for the key; it&#x27;s also possible that the map explicitly maps the key to null. The containsKey operation may be used to distinguish these two cases*/</span></span><br><span class="line">&lt;P&gt;</span><br><span class="line">返回指定键映射到的值，如果此映射不包含该键的映射，则返回<span class="literal">null</span>。</span><br><span class="line">更正式地说，如果这个映射包含从键k到值v的映射，使得（键==<span class="literal">null</span>？k==<span class="literal">null</span>:key.equals（k）），那么这个方法返回v；否则返回<span class="literal">null</span>。（最多可以有一个这样的映射。）</span><br><span class="line">空映射不一定包含空映射的返回值；映射也可能显式地将密钥映射为<span class="literal">null</span>。containsKey操作可用于区分这两种情况</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"><span class="keyword">public</span> V <span class="title function_">get</span><span class="params">(Object key)</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt; e;</span><br><span class="line">        <span class="keyword">if</span> ((e = getNode(hash(key), key)) == <span class="literal">null</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="comment">// accessOder为true时，被访问的节点被置于双向链表尾部</span></span><br><span class="line">        <span class="keyword">if</span> (accessOrder)</span><br><span class="line">            afterNodeAccess(e);</span><br><span class="line">        <span class="keyword">return</span> e.value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key.*/</span></span><br><span class="line">&lt;p&gt;返回指定键映射到的值，如果此映射不包含该键的映射，则返回defaultValue。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> V <span class="title function_">getOrDefault</span><span class="params">(Object key, V defaultValue)</span> &#123;</span><br><span class="line">       Node&lt;K,V&gt; e;</span><br><span class="line">       <span class="keyword">if</span> ((e = getNode(hash(key), key)) == <span class="literal">null</span>)</span><br><span class="line">           <span class="keyword">return</span> defaultValue;</span><br><span class="line">       <span class="keyword">if</span> (accessOrder)</span><br><span class="line">           afterNodeAccess(e);</span><br><span class="line">       <span class="keyword">return</span> e.value;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>可以看到在get 方法中调用了afterNodeAccess方法，下面看下这个方法干了什么</p>
-<h2 id="afterNodeAccess"><a href="#afterNodeAccess" class="headerlink" title="afterNodeAccess"></a>afterNodeAccess</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">afterNodeAccess</span><span class="params">(Node&lt;K,V&gt; e)</span> &#123; <span class="comment">// move node to last</span></span><br><span class="line">    <span class="comment">// 用 last 表示插入 e 前的尾节点</span></span><br><span class="line">    <span class="comment">// 插入 e 后 e 是尾节点, 所以也是表示 e 的前一个节点</span></span><br><span class="line">    LinkedHashMap.Entry&lt;K,V&gt; last;</span><br><span class="line">    <span class="comment">//如果是访问序，且当前节点并不是尾节点</span></span><br><span class="line">    <span class="comment">//将该节点置为双向链表的尾部</span></span><br><span class="line">    <span class="keyword">if</span> (accessOrder &amp;&amp; (last = tail) != e) &#123;</span><br><span class="line">        <span class="comment">// p: 当前节点</span></span><br><span class="line">        <span class="comment">// b: 前一个节点</span></span><br><span class="line">        <span class="comment">// a: 后一个节点</span></span><br><span class="line">        LinkedHashMap.Entry&lt;K,V&gt; p =</span><br><span class="line">            (LinkedHashMap.Entry&lt;K,V&gt;)e, b = p.before, a = p.after;</span><br><span class="line">        <span class="comment">// 因为要移动到链尾，所以先至尾指针为空</span></span><br><span class="line">        p.after = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//如果前面没有元素，则p之前为头结点，直接让a成为头结点</span></span><br><span class="line">        <span class="keyword">if</span> (b == <span class="literal">null</span>)</span><br><span class="line">            head = a;</span><br><span class="line">        <span class="comment">// 否则b的尾指针指向a</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            b.after = a;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (a != <span class="literal">null</span>)</span><br><span class="line">        <span class="comment">//如果a不为空，则a的头指针指向b</span></span><br><span class="line">            a.before = b;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        <span class="comment">//否则 p之前就为尾指针，则另b成为尾指针</span></span><br><span class="line">            last = b;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (last == <span class="literal">null</span>)</span><br><span class="line">            head = p;</span><br><span class="line">        <span class="comment">//如果双向链表中只有p一个节点，则令p即为头结点，也为尾节点</span></span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">//否则 将p插入链尾</span></span><br><span class="line">            p.before = last;</span><br><span class="line">            last.after = p;</span><br><span class="line">        &#125;</span><br><span class="line">        tail = p;</span><br><span class="line">        ++modCount;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="put"><a href="#put" class="headerlink" title="put"></a>put</h2><p>LinkedHashMap 并没有重写HashMap的 put 方法，调用的还是HashMap得put方法</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Associates the specified value with the specified key in this map.</span></span><br><span class="line"><span class="comment">     * If the map previously contained a mapping for the key, the old</span></span><br><span class="line"><span class="comment">     * value is replaced.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key key with which the specified value is to be associated</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> value value to be associated with the specified key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> the previous value associated with &lt;tt&gt;key&lt;/tt&gt;, or</span></span><br><span class="line"><span class="comment">     *         &lt;tt&gt;null&lt;/tt&gt; if there was no mapping for &lt;tt&gt;key&lt;/tt&gt;.</span></span><br><span class="line"><span class="comment">     *         (A &lt;tt&gt;null&lt;/tt&gt; return can also indicate that the map</span></span><br><span class="line"><span class="comment">     *         previously associated &lt;tt&gt;null&lt;/tt&gt; with &lt;tt&gt;key&lt;/tt&gt;.)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> V <span class="title function_">put</span><span class="params">(K key, V value)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> putVal(hash(key), key, value, <span class="literal">false</span>, <span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Implements Map.put and related methods.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> hash hash for key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key the key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> value the value to put</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> onlyIfAbsent if true, don&#x27;t change existing value</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> evict if false, the table is in creation mode.</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> previous value, or null if none</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">final</span> V <span class="title function_">putVal</span><span class="params">(<span class="type">int</span> hash, K key, V value, <span class="type">boolean</span> onlyIfAbsent,</span></span><br><span class="line"><span class="params">                   <span class="type">boolean</span> evict)</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; p; <span class="type">int</span> n, i;</span><br><span class="line">        <span class="keyword">if</span> ((tab = table) == <span class="literal">null</span> || (n = tab.length) == <span class="number">0</span>)</span><br><span class="line">            n = (tab = resize()).length;</span><br><span class="line">        <span class="keyword">if</span> ((p = tab[i = (n - <span class="number">1</span>) &amp; hash]) == <span class="literal">null</span>)</span><br><span class="line">            tab[i] = newNode(hash, key, value, <span class="literal">null</span>);</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            Node&lt;K,V&gt; e; K k;</span><br><span class="line">            <span class="keyword">if</span> (p.hash == hash &amp;&amp;</span><br><span class="line">                ((k = p.key) == key || (key != <span class="literal">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line">                e = p;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (p <span class="keyword">instanceof</span> TreeNode)</span><br><span class="line">                e = ((TreeNode&lt;K,V&gt;)p).putTreeVal(<span class="built_in">this</span>, tab, hash, key, value);</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">binCount</span> <span class="operator">=</span> <span class="number">0</span>; ; ++binCount) &#123;</span><br><span class="line">                    <span class="keyword">if</span> ((e = p.next) == <span class="literal">null</span>) &#123;</span><br><span class="line">                        p.next = newNode(hash, key, value, <span class="literal">null</span>);</span><br><span class="line">                        <span class="keyword">if</span> (binCount &gt;= TREEIFY_THRESHOLD - <span class="number">1</span>) <span class="comment">// -1 for 1st</span></span><br><span class="line">                            treeifyBin(tab, hash);</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span> (e.hash == hash &amp;&amp;</span><br><span class="line">                        ((k = e.key) == key || (key != <span class="literal">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    p = e;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (e != <span class="literal">null</span>) &#123; <span class="comment">// existing mapping for key</span></span><br><span class="line">                <span class="type">V</span> <span class="variable">oldValue</span> <span class="operator">=</span> e.value;</span><br><span class="line">                <span class="keyword">if</span> (!onlyIfAbsent || oldValue == <span class="literal">null</span>)</span><br><span class="line">                    e.value = value;</span><br><span class="line">                afterNodeAccess(e);</span><br><span class="line">                <span class="keyword">return</span> oldValue;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ++modCount;</span><br><span class="line">        <span class="keyword">if</span> (++size &gt; threshold)</span><br><span class="line">            resize();</span><br><span class="line">        afterNodeInsertion(evict);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>此外HashMap的putVal()方法，还调用了afterNodeInsertion()方法，</p>
-<h2 id="afterNodeInsertion"><a href="#afterNodeInsertion" class="headerlink" title="afterNodeInsertion"></a>afterNodeInsertion</h2><p>当插入数据时，将双向链表的头结点移除，这几个方法让LinkedHashMap实现了LRU算法。不过removeEldestEntry()默认是返回false的，需要子类继承重写removeEldestEntry()方法。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">afterNodeInsertion</span><span class="params">(<span class="type">boolean</span> evict)</span> &#123; <span class="comment">// possibly remove eldest</span></span><br><span class="line">        LinkedHashMap.Entry&lt;K,V&gt; first;</span><br><span class="line">        <span class="keyword">if</span> (evict &amp;&amp; (first = head) != <span class="literal">null</span> &amp;&amp; removeEldestEntry(first)) &#123;</span><br><span class="line">            <span class="type">K</span> <span class="variable">key</span> <span class="operator">=</span> first.key;</span><br><span class="line">            removeNode(hash(key), key, <span class="literal">null</span>, <span class="literal">false</span>, <span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>LinkedHashMap的remove()方法也是调用的HashMap的remove()方法，</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Removes the mapping for the specified key from this map if present.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span>  key key whose mapping is to be removed from the map</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> the previous value associated with &lt;tt&gt;key&lt;/tt&gt;, or</span></span><br><span class="line"><span class="comment">     *         &lt;tt&gt;null&lt;/tt&gt; if there was no mapping for &lt;tt&gt;key&lt;/tt&gt;.</span></span><br><span class="line"><span class="comment">     *         (A &lt;tt&gt;null&lt;/tt&gt; return can also indicate that the map</span></span><br><span class="line"><span class="comment">     *         previously associated &lt;tt&gt;null&lt;/tt&gt; with &lt;tt&gt;key&lt;/tt&gt;.)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> V <span class="title function_">remove</span><span class="params">(Object key)</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt; e;</span><br><span class="line">        <span class="keyword">return</span> (e = removeNode(hashLkey), key, <span class="literal">null</span>, <span class="literal">false</span>, <span class="literal">true</span>)) == <span class="literal">null</span> ?</span><br><span class="line">            <span class="literal">null</span> : e.value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Implements Map.remove and related methods.</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> hash hash for key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key the key</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> value the value to match if matchValue, else ignored</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> matchValue if true only remove if value is equal</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> movable if false do not move other nodes while removing</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> the node, or null if none</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">final</span> Node&lt;K,V&gt; <span class="title function_">removeNode</span><span class="params">(<span class="type">int</span> hash, Object key, Object value,</span></span><br><span class="line"><span class="params">                               <span class="type">boolean</span> matchValue, <span class="type">boolean</span> movable)</span> &#123;</span><br><span class="line">        Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; p; <span class="type">int</span> n, index;</span><br><span class="line">        <span class="keyword">if</span> ((tab = table) != <span class="literal">null</span> &amp;&amp; (n = tab.length) &gt; <span class="number">0</span> &amp;&amp;</span><br><span class="line">            (p = tab[index = (n - <span class="number">1</span>) &amp; hash]) != <span class="literal">null</span>) &#123;</span><br><span class="line">            Node&lt;K,V&gt; node = <span class="literal">null</span>, e; K k; V v;</span><br><span class="line">            <span class="keyword">if</span> (p.hash == hash &amp;&amp;</span><br><span class="line">                ((k = p.key) == key || (key != <span class="literal">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line">                node = p;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> ((e = p.next) != <span class="literal">null</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (p <span class="keyword">instanceof</span> TreeNode)</span><br><span class="line">                    node = ((TreeNode&lt;K,V&gt;)p).getTreeNode(hash, key);</span><br><span class="line">                <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">do</span> &#123;</span><br><span class="line">                        <span class="keyword">if</span> (e.hash == hash &amp;&amp;</span><br><span class="line">                            ((k = e.key) == key ||</span><br><span class="line">                             (key != <span class="literal">null</span> &amp;&amp; key.equals(k)))) &#123;</span><br><span class="line">                            node = e;</span><br><span class="line">                            <span class="keyword">break</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                        p = e;</span><br><span class="line">                    &#125; <span class="keyword">while</span> ((e = e.next) != <span class="literal">null</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (node != <span class="literal">null</span> &amp;&amp; (!matchValue || (v = node.value) == value ||</span><br><span class="line">                                 (value != <span class="literal">null</span> &amp;&amp; value.equals(v)))) &#123;</span><br><span class="line">                <span class="keyword">if</span> (node <span class="keyword">instanceof</span> TreeNode)</span><br><span class="line">                    ((TreeNode&lt;K,V&gt;)node).removeTreeNode(<span class="built_in">this</span>, tab, movable);</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span> (node == p)</span><br><span class="line">                    tab[index] = node.next;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    p.next = node.next;</span><br><span class="line">                ++modCount;</span><br><span class="line">                --size;</span><br><span class="line">                afterNodeRemoval(node);</span><br><span class="line">                <span class="keyword">return</span> node;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>总结：</p>
-<ul>
-<li>  LinkedHashMap 继承 HashMap，拥有 HashMap 的功能</li>
-<li>  LinkedHashMap 维护了两个数据结构，一是 HashMap 的结构，二是用来做迭代的双向链表</li>
-<li>  LinkedHashMap 独特的迭代器设计和一些函数的重写，导致迭代器按双向链表迭代，并且若没有设置 accessOrder，则按插入顺序迭代，否则，按访问顺序迭代</li>
-<li>  通过重写removeEldestEntry可以实现 LruCache 的功能</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LruCache-原理分析</title>
-    <url>/2022/03/24/2022/java/LruCache-%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h1 id="1-LruCache原理是什么"><a href="#1-LruCache原理是什么" class="headerlink" title="1.LruCache原理是什么"></a>1.LruCache原理是什么</h1><p> LruCache 采用最近最少使用算法，设定一个缓存大小，当缓存达到这个大小之后，会将最老的数据移除，避免图片占用内存过大导致OOM。</p>
-<h1 id="2-Lrucache源码分析"><a href="#2-Lrucache源码分析" class="headerlink" title="2.Lrucache源码分析"></a>2.Lrucache源码分析</h1> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LruCache</span>&lt;K, V&gt; &#123;</span><br><span class="line">	<span class="comment">// 数据最终存在 LinkedHashMap 中</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> LinkedHashMap&lt;K, V&gt; map;</span><br><span class="line">	...</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">LruCache</span><span class="params">(<span class="type">int</span> maxSize)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (maxSize &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">IllegalArgumentException</span>(<span class="string">&quot;maxSize &lt;= 0&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">this</span>.maxSize = maxSize;</span><br><span class="line">		<span class="comment">// 创建一个LinkedHashMap，accessOrder 传true</span></span><br><span class="line">        <span class="built_in">this</span>.map = <span class="keyword">new</span> <span class="title class_">LinkedHashMap</span>&lt;K, V&gt;(<span class="number">0</span>, <span class="number">0.75f</span>, <span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
-<p>LruCache 构造方法里创建一个LinkedHashMap，accessOrder 参数传true，表示访问时重新排序，accessOrder 参数传false，表示插入时重新排序。（/* LruCache 核心工作原理就在此*/）</p>
-<p>插入顺序是什么意思？<br>按照对象插入的顺序进行排列，可以简单说按照插入的时间先后顺序排列。<br>依次放入1,2,3,4,5   那么按照插入顺序后LruCache中的对象顺序就是1,2,3,4,5</p>
-<p>那么访问顺序是什么意思呢？<br>访问顺序意思就是LruCache中被访问过的子对象会重新排序，那么意味着我们先依次排序进行对象缓存1,2,3,4,5<br>现阶段的对象顺序是1,2,3,4,5<br>如果现在内存使用了2号缓存，那么就表示2号被访问了，重新排序 2,1,3,4,5<br>如果现在内存再命中了4号缓存，那么就表示4号被访问了，重新排序 4,2,1,3,5<br>内存再命中了5号缓存，那么就表示4号被访问了，重新排序 5,4,2,1,3<br>…..<br>…..</p>
-<p>所以每次使用过的缓存都会被重新排到缓存队列的最前面。</p>
-<p>那么意味着，队列越后面的缓存就使用得越少，当缓存队列容量达到阀值后，再往队列中添加新缓存时则可以将队列最后面的使用次数最少的缓存依次移除，插入新缓存，达到Lru算法的效果。</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-链表（单向、循环、双向）</title>
-    <url>/2022/03/23/2022/java/java-%E9%93%BE%E8%A1%A8/</url>
-    <content><![CDATA[<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>什么是链表？链表是一种常见的基础数据结构，是一种线性表，但并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针来做关联，同时链表也分为，单链表、双链表、循环链表。</p>
-<h2 id="单链表（单向链表）"><a href="#单链表（单向链表）" class="headerlink" title="单链表（单向链表）"></a>单链表（单向链表）</h2><h3 id="单链表由两个部分构成"><a href="#单链表由两个部分构成" class="headerlink" title="单链表由两个部分构成"></a>单链表由两个部分构成</h3><ul>
-<li>  DATA域：数据域、用来存储数据元素</li>
-<li>  NEXT域：指针域、用来指向下一个节点</li>
-</ul>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RB60.jpg" alt="单链表"></p>
-<p>链表与数组类似,也可以进行查找、插入、删除、读取等操作,但是由于链表与数组的特性不同,导致不同操作的复杂度也不同</p>
-<h3 id="查找方式"><a href="#查找方式" class="headerlink" title="查找方式"></a>查找方式</h3><ul>
-<li><p>  从头节点进入,开始比对节点的值,如果不同则通过指针进入下一个节点</p>
-</li>
-<li><p>  重复上面的动作,直到找到相同的值,或者节点的指针指向null</p>
-</li>
-<li><p>  时间复杂度为O(n)</p>
-</li>
-</ul>
-<h3 id="插入或删除方式"><a href="#插入或删除方式" class="headerlink" title="插入或删除方式"></a>插入或删除方式</h3><p>链表与数组最大的不同就在于删除、插入的性能优势,由于链表是非连续的内存,所以不用像数组一样在插入、删除操作的时候需要进行大面积的成员位移,比如在a、b节点之间插入一个新节点c,链表只需要做</p>
-<ul>
-<li>  a断开指向b的指针，将指针指向c</li>
-<li>  c节点将指针指向b，完毕（这才是魅力所在）</li>
-</ul>
-<p>插入或删除只需要调整指针即可。</p>
-<p>时间复杂度为O(1)</p>
-<p>下面看下链表的插入、删除操作</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3Rgk4.jpg" alt="单链表插入&amp;删除"></p>
-<h3 id="读取方式"><a href="#读取方式" class="headerlink" title="读取方式"></a>读取方式</h3><p>链表与数组相比读取性能是有劣势的。数组读取操作性能高效是因为它是一块连续内存，读取通过寻址公式就可以快速定位，链表非连续内存必须通过指针节点一一遍历。</p>
-<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ul>
-<li>  撤销功能,这种操作最多见于各种文本、图形编辑器中,撤销重做在编辑器场景下属于家常便饭,单向链表由于良好的删除特性在这个场景很适用</li>
-<li>  图片队列上传</li>
-<li>  …</li>
-</ul>
-<h2 id="双链表（双向链表）"><a href="#双链表（双向链表）" class="headerlink" title="双链表（双向链表）"></a>双链表（双向链表）</h2><p>我们看到双向链表多了一个新的指针prev指向节点的前一个节点,当然由于多了一个指针,所以双向链表要更占内存</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RfpR.jpg" alt="双链表"></p>
-<h3 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h3><p>向双链表中插入一个新节点，需要通过调整两次prev指向和两次next指向来完成。如下图所示，X为新节点，将A1的next指向X，将X的next指向A2，将A2的prev指向X，将X的prev指向A1即可。</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RT0O.jpg" alt="双链表插入"></p>
-<h3 id="删除操作"><a href="#删除操作" class="headerlink" title="删除操作"></a>删除操作</h3><p>从双链表中删除一个节点，需要通过调整一次prev指向和一次next指向来完成。如下图所示，删除A2节点，将A1的next指向A3，将A3的 prev指向A1即可。</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RqtH.jpg" alt="双链表删除"></p>
-<h2 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h2><p>环形链表又叫循环链表，本文讲述的是单向环形链表，其与单链表的唯一区别是尾部节点的next不再为空，则是指向了头部节点，这样便形成了一个环。</p>
-<p><img src="https://s1.ax1x.com/2022/03/24/q3RxjP.jpg" alt="循环链表"></p>
-<p>小结：链表与数组的的不同之处在于数组是一块连续的内存,而链表可以不是连续内存,链表的节点与节点之间通过指针来联系的</p>
-<ul>
-<li>  数组静态分配内存，链表动态分配内存</li>
-<li>  数组在内存中连续，链表不连续</li>
-<li>  数组元素在栈区，链表元素在堆区</li>
-<li>  数组利用下标定位，时间复杂度为O(1)，链表定位元素时间复杂度O(n)</li>
-<li>  数组插入或删除元素的时间复杂度O(n)，链表的时间复杂度O(1)</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java高级特性-反射</title>
-    <url>/2022/03/30/2022/java/java-%E5%8F%8D%E5%B0%84/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p> <strong><a href="https://baike.baidu.com/item/JAVA%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/6015990">JAVA反射机制</a>是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。</strong></p>
-<h1 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h1><p>Android中最熟悉的反射，莫过于Json数据的转换，例如网络数据，数据库数据和类之间的相互转化。使用反射机制可以直接创建对象，方便代码管理。</p>
-<h1 id="相关类"><a href="#相关类" class="headerlink" title="相关类"></a>相关类</h1><p><a href="https://developer.android.google.cn/reference/java/lang/Class">. Class</a></p>
-<ul>
-<li>class类下部分常用方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">翻译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#forName(java.lang.String,%20boolean,%20java.lang.ClassLoader)">forName(String className)</a></td>
-<td align="center">加载参数指定的类，并且初始化它。</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#cast(java.lang.Object)">cast</a></td>
-<td align="center">对象转换成代表类或是接口的对象</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#cast(java.lang.Object)">getClasses()</a></td>
-<td align="center">返回一个数组，数组中包含该类中所有公共类和接口类的对象</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getName()">getName()</a></td>
-<td align="center">获取类路径名称</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#newInstance()">newInstance</a></td>
-<td align="center">创建类的实例</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getPackage()">getPackage()</a></td>
-<td align="center">获取类所在包</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getPackage()">getInterfaces()</a></td>
-<td align="center">确定此对象所表示的类或接口实现的接口</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getSuperclass()">getSuperclass()</a></td>
-<td align="center">获得当前类继承的父类的名字</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getClassLoader()">getClassLoader()</a></td>
-<td align="center">获取类加载器</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredClasses()">getDeclaredClasses()</a></td>
-<td align="center">返回一个数组，数组中包含该类中所有类和接口类的对象</td>
-</tr>
-</tbody></table>
-<ul>
-<li>Class类下相关属性方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">翻译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getField(java.lang.String)">getField(String name)</a></td>
-<td align="center">获取某个公有的属性对象</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getFields()">getFields()</a></td>
-<td align="center">获取所有公有的属性对象</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredField(java.lang.String)">getDeclaredField(String name)</a>)</td>
-<td align="center">获取某个私有属性对象</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredFields()">getDeclaredFields()</a></td>
-<td align="center">获取所有私有属性对象</td>
-</tr>
-</tbody></table>
-<ul>
-<li>Class 类下相关注解方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">翻译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredAnnotations()">getDeclaredAnnotations()</a></td>
-<td align="center">返回对应类下所有注解对象</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredAnnotation(java.lang.Class%3CA%3E)">getDeclaredAnnotation(Class<A> annotationClass)</a></td>
-<td align="center">返回对应类中与参数类型匹配的所有注解对象</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getAnnotation(java.lang.Class%3CA%3E)">getAnnotation(Class<A> annotationClass)</a></td>
-<td align="center">返回对应类中与参数类型匹配的公有注解对象</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getAnnotations()">getAnnotations ()</a></td>
-<td align="center">返回对应类中所有公有注解对象</td>
-</tr>
-</tbody></table>
-<ul>
-<li>Class 类下其它相关方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">翻译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getMethods()">getMethods()</a></td>
-<td align="center">返回该类所有公有的方法</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getMethod(java.lang.String,%20java.lang.Class%3C?%3E...)">getMethod (String name, Class…&lt;?&gt; parameterTypes)</a></td>
-<td align="center">返回该类某个公有方法</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredMethod(java.lang.String,%20java.lang.Class%3C?%3E...)">getDeclaredMethod(String name, Class…&lt;?&gt; parameterTypes)</a></td>
-<td align="center">返回该类某个方法</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/Class#getDeclaredMethods()">getDeclaredMethods()</a></td>
-<td align="center">返回该类所有方法</td>
-</tr>
-</tbody></table>
-<p><a href="https://developer.android.google.cn/reference/java/lang/reflect/Field">. Method</a></p>
-<ul>
-<li>Method类下部分常用方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">翻译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/reflect/Method#invoke(java.lang.Object,%20java.lang.Object...)">invoke(Object obj, Object… args)</a></td>
-<td align="center">传递object对象及参数调用该对象对应的方法</td>
-</tr>
-</tbody></table>
-<p><a href="https://developer.android.google.cn/reference/java/lang/reflect/Field">. Field</a></p>
-<ul>
-<li>Field类下部分常用方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">翻译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/reflect/Field#get(java.lang.Object)">get(Object obj)</a></td>
-<td align="center">获得obj中对应的属性值</td>
-</tr>
-<tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/reflect/Field#set(java.lang.Object,%20java.lang.Object)">set(Object obj, Object value)</a></td>
-<td align="center">设置obj中对应属性值</td>
-</tr>
-</tbody></table>
-<p><a href="https://developer.android.google.cn/reference/java/lang/reflect/Constructor">. Constructor</a></p>
-<ul>
-<li>Constructor类下部分常用方法</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">方法名</th>
-<th align="center">翻译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://developer.android.google.cn/reference/java/lang/reflect/Constructor#newInstance(java.lang.Object...)">newInstance(Object… initargs)</a></td>
-<td align="center">根据传递的参数创建类的对象</td>
-</tr>
-</tbody></table>
-<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><ul>
-<li>反射实体类<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">GloryOfKings</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String role;</span><br><span class="line">    <span class="keyword">private</span> String skills;</span><br><span class="line">    <span class="keyword">private</span> String explain;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">GloryOfKings</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">GloryOfKings</span><span class="params">(String role, String skills)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.role = role;</span><br><span class="line">        <span class="built_in">this</span>.skills = skills;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getRole</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> role;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setRole</span><span class="params">(String role)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.role = role;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getSkills</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> skills;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setSkills</span><span class="params">(String skills)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.skills = skills;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setExplain</span><span class="params">(String explain)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.explain = explain;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getExplain</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> explain;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String <span class="title function_">week</span><span class="params">(<span class="type">int</span> flag)</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">string</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">switch</span> (flag) &#123;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.monday:</span><br><span class="line">                string = <span class="string">&quot;天气晴朗&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.tuesday:</span><br><span class="line">                string = <span class="string">&quot;多云&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Wednesday:</span><br><span class="line">                string = <span class="string">&quot;微风&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Thursday:</span><br><span class="line">                string = <span class="string">&quot;阵风6级&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Friday:</span><br><span class="line">                string = <span class="string">&quot;中雨&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Saturday:</span><br><span class="line">                string = <span class="string">&quot;大雨&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> FlagMethod.Sunday:</span><br><span class="line">                string = <span class="string">&quot;晴朗&quot;</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                string = <span class="string">&quot;-.-&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> string;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li>逻辑封装类<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Reflect</span> &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 反射-创建对象（三种方式：.class、new MyClass().getClass，Class.forName(&quot;类的全路径&quot;)）</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">newInstance</span><span class="params">(<span class="type">int</span> flag)</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">outMessage</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">switch</span> (flag) &#123;</span><br><span class="line">                <span class="keyword">case</span> FlagSource.newInstanceOne:</span><br><span class="line">                    Class&lt;GloryOfKings&gt; cls = GloryOfKings.class;</span><br><span class="line">                    <span class="type">GloryOfKings</span> <span class="variable">gloryOfKings</span> <span class="operator">=</span> cls.newInstance();</span><br><span class="line">                    gloryOfKings.setExplain(<span class="string">&quot;创建对象方式- GloryOfKings.class&quot;</span>);</span><br><span class="line">                    gloryOfKings.setRole(<span class="string">&quot;李元芳&quot;</span>);</span><br><span class="line">                    gloryOfKings.setSkills(<span class="string">&quot;利刃风暴&quot;</span>);</span><br><span class="line">                    outMessage = gloryOfKings.toString();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> FlagSource.newInstanceTwo:</span><br><span class="line">                    Class&lt;? <span class="keyword">extends</span> <span class="title class_">GloryOfKings</span>&gt; cls1 = <span class="keyword">new</span> <span class="title class_">GloryOfKings</span>().getClass();</span><br><span class="line">                    <span class="type">GloryOfKings</span> <span class="variable">gloryOfKings1</span> <span class="operator">=</span> cls1.newInstance();</span><br><span class="line">                    gloryOfKings1.setExplain(<span class="string">&quot;创建对象方式- new GloryOfKings().getClass()&quot;</span>);</span><br><span class="line">                    gloryOfKings1.setRole(<span class="string">&quot;后羿&quot;</span>);</span><br><span class="line">                    gloryOfKings1.setSkills(<span class="string">&quot;灼日之矢”&quot;</span>);</span><br><span class="line">                    outMessage = gloryOfKings1.toString();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> FlagSource.newInstanceThree:</span><br><span class="line">                    Class&lt;?&gt; cls2 = Class.forName(<span class="string">&quot;com.linked.business.reflect.GloryOfKings&quot;</span>);</span><br><span class="line">                    <span class="type">GloryOfKings</span> <span class="variable">gloryOfKings2</span> <span class="operator">=</span> (GloryOfKings) cls2.newInstance();</span><br><span class="line">                    gloryOfKings2.setExplain(<span class="string">&quot;创建对象方式- Class.forName()&quot;</span>);</span><br><span class="line">                    gloryOfKings2.setRole(<span class="string">&quot;诸葛亮&quot;</span>);</span><br><span class="line">                    gloryOfKings2.setSkills(<span class="string">&quot;时空穿梭”&quot;</span>);</span><br><span class="line">                    outMessage = gloryOfKings2.toString();</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(outMessage);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 反射-私有构造方法</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">construction</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; cls = Class.forName(<span class="string">&quot;com.linked.business.reflect.GloryOfKings&quot;</span>);</span><br><span class="line">            Constructor&lt;?&gt; constructor = cls.getDeclaredConstructor(String.class, String.class);</span><br><span class="line">            constructor.setAccessible(<span class="literal">true</span>);</span><br><span class="line">            <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> constructor.newInstance(<span class="string">&quot; 反射-设置私有构造方法：名称&quot;</span>, <span class="string">&quot; 反射-获取私有构造方法：福利&quot;</span>);</span><br><span class="line">            <span class="type">GloryOfKings</span> <span class="variable">go</span> <span class="operator">=</span> (GloryOfKings) obj;</span><br><span class="line">            System.out.println(<span class="string">&quot;反射-获取私有构造方法&quot;</span> + go);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 反射-私有属性</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">reflectDeclaredAttribute</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; cls = Class.forName(<span class="string">&quot;com.linked.business.reflect.GloryOfKings&quot;</span>);</span><br><span class="line">            <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> cls.newInstance();</span><br><span class="line">            <span class="type">Field</span> <span class="variable">field</span> <span class="operator">=</span> cls.getDeclaredField(<span class="string">&quot;TAG&quot;</span>);</span><br><span class="line">            field.setAccessible(<span class="literal">true</span>);</span><br><span class="line">            <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> (String) field.get(obj);</span><br><span class="line">            System.out.println(<span class="string">&quot;反射-获取私有属性&quot;</span> + str);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 反射-私有方法</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;将此对象的 accessible 标志设置为指示的布尔值。值为 true 则指示反射的对象在使用时应该取消 Java 语言访问检查。值为 false 则指示反射的对象应该实施 Java 语言访问检查;</span></span><br><span class="line"><span class="comment">     * 实际上setAccessible是启用和禁用访问安全检查的开关,并不是为true就能访问为false就不能访问 ；</span></span><br><span class="line"><span class="comment">     * 由于JDK的安全检查耗时较多.所以通过setAccessible(true)的方式关闭安全检查就可以达到提升反射速度的目的</span></span><br><span class="line"><span class="comment">     * &lt;/p&gt;</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">privateMethod</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; cls = Class.forName(<span class="string">&quot;com.linked.business.reflect.GloryOfKings&quot;</span>);</span><br><span class="line">            <span class="type">Method</span> <span class="variable">method</span> <span class="operator">=</span> cls.getDeclaredMethod(<span class="string">&quot;week&quot;</span>, <span class="type">int</span>.class);</span><br><span class="line">            method.setAccessible(<span class="literal">true</span>);</span><br><span class="line">            <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> cls.newInstance();</span><br><span class="line">            <span class="comment">//invoke：传递object对象及参数调用该对象对应的方法</span></span><br><span class="line">            <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> (String) method.invoke(obj, FlagMethod.monday);</span><br><span class="line">            System.out.println(str);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>测试类<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ReflectTest</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Reflect.newInstance(FlagSource.newInstanceTwo);</span><br><span class="line">            Reflect.attribute();</span><br><span class="line">            Reflect.construction();</span><br><span class="line">            Reflect.privateMethod();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
 </search>
