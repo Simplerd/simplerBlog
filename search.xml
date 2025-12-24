@@ -1,321 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git代码回滚</title>
-    <url>/2022/03/17/2022/Git/git-back/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&ensp;在我们开发过程中，因各种原因，避免不了将业务代码回滚至指定版本，或者具体一些到某次commit。<br>下面我们将具体步骤及具体实现做分析。</p>
-<h2 id="操作前阅读"><a href="#操作前阅读" class="headerlink" title="操作前阅读"></a>操作前阅读</h2><p>&ensp; 在代码回归操作过程中主要 围绕 git reset 命令进行，该命令会把版本库和工作目录改变为已知状态。具体来讲，git reset 调整 HEAD 引用指向指定的提交，默认情况下还会更新索引以匹配该提交。根据需要，git reset 命令也可以修改工作目录以呈现指定提交代表的项目修订版本。</p>
-<ul>
-<li><p>git reset 命令有三个主要选项</p>
-</li>
-<li><p><code>--soft</code><br>&ensp; 会将 HEAD 引用指向指定提交。索引和工作目录的内容保持不变。这个版本的命令有“最小”影响，只改变一个符号引用的状态使其指向一个新提交。</p>
-</li>
-<li><p><code>--mixed</code><br>&ensp; 会将 HEAD 指向指定提交。索引内容也跟着改变以符合指定提交的树结构，但是工作目录中的内容保持不变。这个版本的命令将索引变成你刚刚暂存该提交全部变化时的状态，它会显示工作目录中还有什么修改。–mixed 是 git reset 的默认模式。</p>
-</li>
-<li><p><code>--hard</code><br>&ensp; 这条命令将 HEAD 引用指向给定提交。索引的内容也跟着改变以符合给定提交的树结构。此外，工作目录的内容也随之改变以反映给定提交表示的树的状态。当改变工作目录的时候，整个目录结构都改成给定提交对应的样子。做的修改都将丢失，新文件将被删除。在给定提交中但不在工作目录中的文件将恢复回来。</p>
-</li>
-</ul>
-<h2 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h2><p>&ensp;一般情况下，我们分为三个步骤就可以解决完代码回滚操作</p>
-<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><ul>
-<li>执行 git log命令查看日志，获取需要回退的版本号<br>例如:<br><img src="https://s3.bmp.ovh/imgs/2022/03/0c4021f483bb41cf.jpg"></li>
-</ul>
-<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>执行 git reset –-soft <commit id> ，如 git reset –soft 4f5e9a90edeadcc45d85f43bd861a837fa7ce4c7 ，重置至指定版本的提交</p>
-<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>执行 git push -f origin <branch_name> 强制提交当前版本号</p>
-<ul>
-<li>&gt;··&lt; 此时恭喜你，你的代码回滚成功了</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
+    <title>TouchBar中调节音量和亮度消失</title>
+    <url>/2022/10/27/2022/Mac%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/TouchBar%E4%B8%AD%E8%B0%83%E8%8A%82%E9%9F%B3%E9%87%8F%E5%92%8C%E4%BA%AE%E5%BA%A6%E6%B6%88%E5%A4%B1/</url>
+    <content><![CDATA[<h2 id="打开-Terminal，运行”killall-ControlStrip“，就可以了"><a href="#打开-Terminal，运行”killall-ControlStrip“，就可以了" class="headerlink" title="打开 Terminal，运行”killall ControlStrip“，就可以了"></a>打开 Terminal，运行”killall ControlStrip“，就可以了</h2><h3 id="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"><a href="#如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻" class="headerlink" title="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"></a><font color=#9dc2af>如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻</font></h3>]]></content>
       <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git常用命令</title>
-    <url>/2022/03/17/2022/Git/git-command/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Git 命令前，先了解几个关键词的概念</p>
-<ul>
-<li>  工作区（workSpace）</li>
-<li>  暂缓区（stage/index）</li>
-<li>  本地仓库（Repository）</li>
-<li>  远程仓库（Remote）</li>
-</ul>
-<p><img src="https://s3.bmp.ovh/imgs/2022/03/64aa14707f10bfb0.png"></p>
-<h1 id="Git-常见命令速查表"><a href="#Git-常见命令速查表" class="headerlink" title="Git 常见命令速查表"></a>Git 常见命令速查表</h1><p><img src="https://ftp.bmp.ovh/imgs/2020/04/5991c03f6436c41b.jpg"></p>
-<h2 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h2><ul>
-<li><p>初始化本地git仓库（创建新仓库）</p>
-<blockquote>
-<p><code>git init</code></p>
-</blockquote>
-</li>
-<li><p>配置用户名</p>
-<blockquote>
-<p><code>git config --global user.name &quot;xxx&quot; </code></p>
-</blockquote>
-</li>
-<li><p>配置邮件</p>
-<blockquote>
-<p><code>git config --global user.email &quot;xxx@xxx.com&quot; </code></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="修改与提交"><a href="#修改与提交" class="headerlink" title="修改与提交"></a>修改与提交</h2><ul>
-<li><p>查看当前版本状态（是否修改）</p>
-<blockquote>
-<p><code>git status</code></p>
-</blockquote>
-</li>
-<li><p>添加修改的指定文件至index(暂缓区)</p>
-<blockquote>
-<p><code>git add &quot;xxx&quot;</code></p>
-</blockquote>
-</li>
-<li><p>添加修改的所有文件至index(暂缓区)</p>
-<blockquote>
-<p><code>git add .</code></p>
-</blockquote>
-</li>
-<li><p> 提交文件 “xxx”为本次提交的说明”</p>
-<blockquote>
-<p><code>git commit -m &#39;xxx&#39; </code></p>
-</blockquote>
-</li>
-<li><p>合并上一次提交<br>git commit -a -m ‘xxx’   ==&gt;&gt;（等价于） git add .   git commit -m ‘xxx’</p>
-<blockquote>
-<p><code>git commit --amend -m &#39;xxx&#39;</code></p>
-</blockquote>
-</li>
-<li><p>将add和commit合为一步</p>
-<blockquote>
-<p><code>git commit -am &#39;xxx&#39;</code></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="查看历史提交"><a href="#查看历史提交" class="headerlink" title="查看历史提交"></a>查看历史提交</h2><ul>
-<li><p>显示提交日志</p>
-<blockquote>
-<p><code>git log </code></p>
-</blockquote>
-</li>
-<li><p> 显示1行日志 -n为n行 git log -5</p>
-<blockquote>
-<p><code>git log -1</code></p>
-</blockquote>
-</li>
-<li><p>显示提交日志及相关变动文件</p>
-<blockquote>
-<p><code>git log --stat </code></p>
-</blockquote>
-</li>
-<li><p>可查看该文件以前每一次push的修改内容）  </p>
-<blockquote>
-<p><code>git log -p + xxx(文件名)</code></p>
-</blockquote>
-</li>
-<li><p>只查看该文件当前这一次的push内容）</p>
-<blockquote>
-<p><code>git log - p -1 + xxx(文件名</code></p>
-</blockquote>
-</li>
-<li><p>显示HEAD提交日志</p>
-<blockquote>
-<p><code>git show HEAD </code></p>
-</blockquote>
-</li>
-<li><p>显示某个提交的详细内容</p>
-<blockquote>
-<p><code>git show dfb02e6e4f2f7b573337763e5c0013802e392818 </code></p>
-</blockquote>
-</li>
-<li><p>显示已存在的tag</p>
-<blockquote>
-<p><code>git tag</code></p>
-</blockquote>
-</li>
-<li><p>增加v2.0的tag</p>
-<blockquote>
-<p><code>git tag -a v2.0  -m &#39;xxx&#39;  </code></p>
-</blockquote>
-</li>
-<li><p>显示v2.0的日志及详细内容</p>
-<blockquote>
-<p><code>git show v2.0 </code></p>
-</blockquote>
-</li>
-<li><p>显示v2.0的日志</p>
-<blockquote>
-<p><code>git log v2.0  </code></p>
-</blockquote>
-</li>
-<li><p>显示所有未添加至index的变更</p>
-<blockquote>
-<p><code>git diff </code></p>
-</blockquote>
-</li>
-<li><p>显示所有已添加index但还未commit的变更</p>
-<blockquote>
-<p><code>git diff --cached </code></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h2><ul>
-<li><p>撤销 add 过的文件 xxx（指定文件名）</p>
-<blockquote>
-<p><code>git reset HEAR &quot;xxx&quot; </code></p>
-</blockquote>
-</li>
-<li><p> 撤销上一次 add 过的所有文件</p>
-<blockquote>
-<p><code>git reset HEAR </code></p>
-</blockquote>
-</li>
-<li><p>放弃单个的文件修改</p>
-<blockquote>
-<p><code>git checkout -- xxx</code></p>
-</blockquote>
-</li>
-<li><p> 放弃所有的文件修改</p>
-<blockquote>
-<p><code>git checkout .</code></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="分支与标签"><a href="#分支与标签" class="headerlink" title="分支与标签"></a>分支与标签</h2><ul>
-<li><p>显示本地所有分支</p>
-<blockquote>
-<p><code>git branch</code></p>
-</blockquote>
-</li>
-<li><p>显示远程、本地所有分支</p>
-<blockquote>
-<p><code>git branch -a</code></p>
-</blockquote>
-</li>
-<li><p>切换至指定分支下</p>
-<blockquote>
-<p><code>git checkout &quot;xxx&quot;</code></p>
-</blockquote>
-</li>
-<li><p>创建新的分支</p>
-<blockquote>
-<p><code>git branch ”xxx“   xxx为新的分支名</code></p>
-</blockquote>
-</li>
-<li><p>创建新的分支并切换至当前新建的分支下</p>
-<blockquote>
-<p><code>git check -b &quot;xxx&quot;</code></p>
-</blockquote>
-</li>
-<li><p>删除指定分支</p>
-<blockquote>
-<p><code>git branch -d &quot;xxx&quot;</code></p>
-</blockquote>
-</li>
-<li><p>强制删除指定分支</p>
-<blockquote>
-<p><code>git branch -D &quot;xxx&quot;</code></p>
-</blockquote>
-</li>
-<li><p>删除tag</p>
-<blockquote>
-<p><code>git tag -d &quot;xxx&quot;</code></p>
-</blockquote>
-</li>
-<li><p>清除本地缓存分支</p>
-<blockquote>
-<p><code>git remote prune origin</code></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="合并已衍合"><a href="#合并已衍合" class="headerlink" title="合并已衍合"></a>合并已衍合</h2><ul>
-<li><p>合并远程master分支至当前分支</p>
-<blockquote>
-<p><code>git merge origin/master </code></p>
-</blockquote>
-</li>
-<li><p>合并提交ff44785404a8e的修改</p>
-<blockquote>
-<p><code>git cherry-pick &quot;ff44785404a8e&quot;</code></p>
-</blockquote>
-</li>
-<li><p>将当前分支push到远程master分支</p>
-<blockquote>
-<p><code>git push origin master </code></p>
-</blockquote>
-</li>
-<li><p>把所有本地tags推送到远程仓库</p>
-<blockquote>
-<p><code>git push --tags</code></p>
-</blockquote>
-</li>
-<li><p>获取所有远程分支（不更新本地分支）</p>
-<blockquote>
-<p><code>git fetch </code></p>
-</blockquote>
-</li>
-<li><p> 获取所有原创分支并清除服务器上已删掉的分支</p>
-<blockquote>
-<p><code>git fetch --prune </code></p>
-</blockquote>
-</li>
-<li><p>获取远程分支master并merge到当前分支</p>
-<blockquote>
-<p><code>git pull origin master </code></p>
-</blockquote>
-</li>
-<li><p>重命名文件README为README2</p>
-<blockquote>
-<p><code>git mv README README2</code></p>
-</blockquote>
-</li>
-<li><p>将当前版本重置为HEAD（通常用于merge失败回退）</p>
-<blockquote>
-<p><code>git reset --hard HEAD </code></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="暂存"><a href="#暂存" class="headerlink" title="暂存"></a>暂存</h2><ul>
-<li><p>暂存当前修改，将所有至为HEAD状态</p>
-<blockquote>
-<p><code>git stash </code></p>
-</blockquote>
-</li>
-<li><p> 查看所有暂存</p>
-<blockquote>
-<p><code>git stash list</code></p>
-</blockquote>
-</li>
-<li><p>恢复暂存文件</p>
-<blockquote>
-<p><code>git stash pop </code></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="操作远程"><a href="#操作远程" class="headerlink" title="操作远程"></a>操作远程</h2><ul>
-<li><p>本地分支推送到远程仓库</p>
-<blockquote>
-<p><code>git push origin master </code></p>
-</blockquote>
-</li>
-<li><p>-u选项指定一个默认主机</p>
-<blockquote>
-<p><code>git push -u origin</code></p>
-</blockquote>
-</li>
-<li><p>不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机</p>
-<blockquote>
-<p><code>git push --all origin </code></p>
-</blockquote>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
+        <tag>Mac</tag>
       </tags>
   </entry>
   <entry>
@@ -637,6 +327,82 @@
       </tags>
   </entry>
   <entry>
+    <title>Android-如何使用注解进行代码检查</title>
+    <url>/2022/09/15/2022/android/Android-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E8%BF%9B%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5/</url>
+    <content><![CDATA[<h3 id="Nullness-注解"><a href="#Nullness-注解" class="headerlink" title="Nullness 注解"></a>Nullness 注解</h3><ul>
+<li>使用 Nullness 注解可以检查给定变量、参数和返回值是否允许 null值<ul>
+<li>@Nullable ：表示可以为 null 的变量、参数或返回值，</li>
+<li>@NonNull ：表示不可为 null 的变量、参数或返回值。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@NonNull</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> View <span class="title function_">onCreateView</span><span class="params">(String name, <span class="meta">@NonNull</span> Context context,<span class="meta">@NonNull</span> AttributeSet attrs)</span> &#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="资源注解"><a href="#资源注解" class="headerlink" title="资源注解"></a>资源注解</h3><ul>
+<li>资源注解的使用可使得在源码阶段让编辑器检查书写的不规范，一定程度上优化代码结构<ul>
+<li>@StringRes：      表示检查是否包含R.string引用</li>
+<li>@ColorRes：       表示检查是否包含R.color引用</li>
+<li>@ColorInt：       表示检查是否包含表示颜色的整型</li>
+<li>@DrawableRes：    表示检查是否包含R.drawable引用</li>
+<li>@DimenRes：       表示检查是否包含R.dimen引用</li>
+<li>@InterpolatorRes：表示检查是否包含插值器引用</li>
+</ul>
+</li>
+</ul>
+<h3 id="线程注解"><a href="#线程注解" class="headerlink" title="线程注解"></a>线程注解</h3><ul>
+<li>线程注解可以检查某个方法是否从某个特定类型的线程中调用<ul>
+<li>@MainThread：表示主线程</li>
+<li>@UiThread：表示 UI 线程</li>
+<li>@WorkerThread：表示工作线程</li>
+<li>@BinderThread：表示Binder线程</li>
+<li>@AnyThread：表示任何一个线程</li>
+</ul>
+</li>
+</ul>
+<h3 id="值约束注解"><a href="#值约束注解" class="headerlink" title="值约束注解"></a>值约束注解</h3><ul>
+<li>使用值约束注解可验证传递的参数的值的合法性，可以借此指定参数的设置范围，可在一定程度上减少代码在主观程度上出现的错误<ul>
+<li>@IntRange：表示可以验证整型参数是否在指定范围内 </li>
+<li>@FloatRange：表示可以验证浮点型参数是否在指定范围内</li>
+<li>@Size：表示可以验证集合、数组、字符串参数是否在指定范围内，可指定最大值、最小值以及确切值</li>
+</ul>
+</li>
+</ul>
+<h3 id="权限注解"><a href="#权限注解" class="headerlink" title="权限注解"></a>权限注解</h3><ul>
+<li>权限注解 @RequiresPermission 可以验证方法调用方的权限，即当使用了权限注解的方法时会检查有没有指定的权限，如果没有则会提示要在 AndroidManifest.xml 文件中申明权限，如果是危险权限还有进行权限动态申请</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单个权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMessage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 全部权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(allOf = &#123;</span></span><br><span class="line"><span class="meta">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span></span><br><span class="line"><span class="meta">        Manifest.permission.READ_EXTERNAL_STORAGE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMesage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 某个权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(anyOf = &#123;</span></span><br><span class="line"><span class="meta">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span></span><br><span class="line"><span class="meta">        Manifest.permission.READ_EXTERNAL_STORAGE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMesage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="返回值注解"><a href="#返回值注解" class="headerlink" title="返回值注解"></a>返回值注解</h3><ul>
+<li>返回值注解 @CheckResult 会检查某个方法的返回值是否被使用，如果没有被使用，则会根据 suggest 配置建议使用相同公民没有返回值的另一个方法，如果返回值使用了，则和未加该注解的方法一样</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@CheckResult(suggest=&quot;#enforcePermission(String,int,int,String)&quot;)</span></span><br><span class="line"><span class="keyword">public</span>  <span class="type">int</span> <span class="title function_">checkPermission</span><span class="params">(<span class="meta">@NonNull</span> String permission, <span class="type">int</span> pid, <span class="type">int</span> uid)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CallSuper"><a href="#CallSuper" class="headerlink" title="CallSuper"></a>CallSuper</h3><ul>
+<li>使用 @CallSuper 注解会验证子类的重写方法是否调用父类的实现，这样约束的好处是可保证父类的实现不会修改，当然，如果不使用该注解，子类重写父类的方法可以不调用弗父类的默认实现</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 父类</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@CallSuper</span>注解的使用</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="comment">//使用@CallSuper注解，子类重写该方法时必须调用该方法</span></span><br><span class="line">    <span class="meta">@CallSuper</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">()</span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Typedef注解"><a href="#Typedef注解" class="headerlink" title="Typedef注解"></a>Typedef注解</h3><ul>
+<li>使用 @IntDef 和 @StringDef 注解 可以创建整型和字符串的枚举注解来验证其他代码中使用的某些整型和字符串，可以保证代码中的某些常量整型或常量字符串是某些具体定义的常量集，这两个注解的位置只能是注解</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Typedef 注解的定义</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ActionType</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_0</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_1</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_2</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Retention(RetentionPolicy.SOURCE)</span></span><br><span class="line">    <span class="meta">@IntDef(&#123;ACTION_TYPE_0,ACTION_TYPE_1,ACTION_TYPE_2&#125;)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="meta">@interface</span> ActionTypeDef&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="可访问性注解"><a href="#可访问性注解" class="headerlink" title="可访问性注解"></a>可访问性注解</h3><ul>
+<li>可访问性注解是 @VisibleForTesting 和 @Keep 可以表示方法、字段、类的可访问性<ul>
+<li>@VisibleForTesting：表示注解的某个代码块的可见性高于能够测试时需要的水平</li>
+<li>@Keep：表示被注解的代码块将不会被混淆。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>注解</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown 语法</title>
     <url>/2022/03/17/2022/Markdown/markdown-grammar/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> &ensp; Markdown语法的基本使用</p>
@@ -832,7 +598,7 @@
 </ul>
 </li>
 <li>语法<br> 将 URL 或电子邮件地址括在&lt;&gt;里</li>
-<li>效果<br><a href="https://www.google.com.hk/">https://www.google.com.hk/</a><br><a href="mailto:&#x74;&#101;&#115;&#x74;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;">&#x74;&#101;&#115;&#x74;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;</a></li>
+<li>效果<br><a href="https://www.google.com.hk/">https://www.google.com.hk/</a><br><a href="mailto:&#116;&#x65;&#115;&#x74;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;">&#116;&#x65;&#115;&#x74;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;</a></li>
 </ul>
 <h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。<br>字符|名称<br>–|–<br>| \ | 反斜杠<br>| * | 星号（asterisk） |<br>| _ | 下划线（underscore） |<br>| { } | 花括号（curly braces） |<br>| [ ] | 方括号（brackets） |<br>| &lt; &gt; | angle brackets |<br>| ( ) | 圆括号或括号（parentheses） |<br>| # | 井号（pound sign） |<br>| + | 加号（plus sign） |<br>| - | 减号（minus sign） (也叫连字符 hyphen) |<br>| . | 句点（dot） |<br>| ! | 感叹号（exclamation mark） |</p>
 ]]></content>
@@ -841,90 +607,6 @@
       </categories>
       <tags>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TouchBar中调节音量和亮度消失</title>
-    <url>/2022/10/27/2022/Mac%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/TouchBar%E4%B8%AD%E8%B0%83%E8%8A%82%E9%9F%B3%E9%87%8F%E5%92%8C%E4%BA%AE%E5%BA%A6%E6%B6%88%E5%A4%B1/</url>
-    <content><![CDATA[<h2 id="打开-Terminal，运行”killall-ControlStrip“，就可以了"><a href="#打开-Terminal，运行”killall-ControlStrip“，就可以了" class="headerlink" title="打开 Terminal，运行”killall ControlStrip“，就可以了"></a>打开 Terminal，运行”killall ControlStrip“，就可以了</h2><h3 id="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"><a href="#如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻" class="headerlink" title="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"></a><font color=#9dc2af>如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻</font></h3>]]></content>
-      <tags>
-        <tag>Mac</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Android-如何使用注解进行代码检查</title>
-    <url>/2022/09/15/2022/android/Android-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E8%BF%9B%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%A3%80%E6%9F%A5/</url>
-    <content><![CDATA[<h3 id="Nullness-注解"><a href="#Nullness-注解" class="headerlink" title="Nullness 注解"></a>Nullness 注解</h3><ul>
-<li>使用 Nullness 注解可以检查给定变量、参数和返回值是否允许 null值<ul>
-<li>@Nullable ：表示可以为 null 的变量、参数或返回值，</li>
-<li>@NonNull ：表示不可为 null 的变量、参数或返回值。</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@NonNull</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> View <span class="title function_">onCreateView</span><span class="params">(String name, <span class="meta">@NonNull</span> Context context,<span class="meta">@NonNull</span> AttributeSet attrs)</span> &#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="资源注解"><a href="#资源注解" class="headerlink" title="资源注解"></a>资源注解</h3><ul>
-<li>资源注解的使用可使得在源码阶段让编辑器检查书写的不规范，一定程度上优化代码结构<ul>
-<li>@StringRes：      表示检查是否包含R.string引用</li>
-<li>@ColorRes：       表示检查是否包含R.color引用</li>
-<li>@ColorInt：       表示检查是否包含表示颜色的整型</li>
-<li>@DrawableRes：    表示检查是否包含R.drawable引用</li>
-<li>@DimenRes：       表示检查是否包含R.dimen引用</li>
-<li>@InterpolatorRes：表示检查是否包含插值器引用</li>
-</ul>
-</li>
-</ul>
-<h3 id="线程注解"><a href="#线程注解" class="headerlink" title="线程注解"></a>线程注解</h3><ul>
-<li>线程注解可以检查某个方法是否从某个特定类型的线程中调用<ul>
-<li>@MainThread：表示主线程</li>
-<li>@UiThread：表示 UI 线程</li>
-<li>@WorkerThread：表示工作线程</li>
-<li>@BinderThread：表示Binder线程</li>
-<li>@AnyThread：表示任何一个线程</li>
-</ul>
-</li>
-</ul>
-<h3 id="值约束注解"><a href="#值约束注解" class="headerlink" title="值约束注解"></a>值约束注解</h3><ul>
-<li>使用值约束注解可验证传递的参数的值的合法性，可以借此指定参数的设置范围，可在一定程度上减少代码在主观程度上出现的错误<ul>
-<li>@IntRange：表示可以验证整型参数是否在指定范围内 </li>
-<li>@FloatRange：表示可以验证浮点型参数是否在指定范围内</li>
-<li>@Size：表示可以验证集合、数组、字符串参数是否在指定范围内，可指定最大值、最小值以及确切值</li>
-</ul>
-</li>
-</ul>
-<h3 id="权限注解"><a href="#权限注解" class="headerlink" title="权限注解"></a>权限注解</h3><ul>
-<li>权限注解 @RequiresPermission 可以验证方法调用方的权限，即当使用了权限注解的方法时会检查有没有指定的权限，如果没有则会提示要在 AndroidManifest.xml 文件中申明权限，如果是危险权限还有进行权限动态申请</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 单个权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMessage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 全部权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(allOf = &#123;</span></span><br><span class="line"><span class="meta">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span></span><br><span class="line"><span class="meta">        Manifest.permission.READ_EXTERNAL_STORAGE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMesage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 某个权限检查</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> message</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RequiresPermission(anyOf = &#123;</span></span><br><span class="line"><span class="meta">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span></span><br><span class="line"><span class="meta">        Manifest.permission.READ_EXTERNAL_STORAGE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setMesage</span><span class="params">(String message)</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="返回值注解"><a href="#返回值注解" class="headerlink" title="返回值注解"></a>返回值注解</h3><ul>
-<li>返回值注解 @CheckResult 会检查某个方法的返回值是否被使用，如果没有被使用，则会根据 suggest 配置建议使用相同公民没有返回值的另一个方法，如果返回值使用了，则和未加该注解的方法一样</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@CheckResult(suggest=&quot;#enforcePermission(String,int,int,String)&quot;)</span></span><br><span class="line"><span class="keyword">public</span>  <span class="type">int</span> <span class="title function_">checkPermission</span><span class="params">(<span class="meta">@NonNull</span> String permission, <span class="type">int</span> pid, <span class="type">int</span> uid)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="CallSuper"><a href="#CallSuper" class="headerlink" title="CallSuper"></a>CallSuper</h3><ul>
-<li>使用 @CallSuper 注解会验证子类的重写方法是否调用父类的实现，这样约束的好处是可保证父类的实现不会修改，当然，如果不使用该注解，子类重写父类的方法可以不调用弗父类的默认实现</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 父类</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@CallSuper</span>注解的使用</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="comment">//使用@CallSuper注解，子类重写该方法时必须调用该方法</span></span><br><span class="line">    <span class="meta">@CallSuper</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">()</span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Typedef注解"><a href="#Typedef注解" class="headerlink" title="Typedef注解"></a>Typedef注解</h3><ul>
-<li>使用 @IntDef 和 @StringDef 注解 可以创建整型和字符串的枚举注解来验证其他代码中使用的某些整型和字符串，可以保证代码中的某些常量整型或常量字符串是某些具体定义的常量集，这两个注解的位置只能是注解</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Typedef 注解的定义</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ActionType</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_0</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_1</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">ACTION_TYPE_2</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Retention(RetentionPolicy.SOURCE)</span></span><br><span class="line">    <span class="meta">@IntDef(&#123;ACTION_TYPE_0,ACTION_TYPE_1,ACTION_TYPE_2&#125;)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="meta">@interface</span> ActionTypeDef&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="可访问性注解"><a href="#可访问性注解" class="headerlink" title="可访问性注解"></a>可访问性注解</h3><ul>
-<li>可访问性注解是 @VisibleForTesting 和 @Keep 可以表示方法、字段、类的可访问性<ul>
-<li>@VisibleForTesting：表示注解的某个代码块的可见性高于能够测试时需要的水平</li>
-<li>@Keep：表示被注解的代码块将不会被混淆。</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-      <tags>
-        <tag>注解</tag>
       </tags>
   </entry>
   <entry>
@@ -967,45 +649,6 @@
       </categories>
       <tags>
         <tag>EventBus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Handler-内存泄漏解决方案</title>
-    <url>/2022/05/04/2022/android/Handler-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
-<li>Android开发中，内存泄漏是经常发生的，今天来详细聊一聊Handler使用过程中产生内存泄漏的场景以及对应的解决方案。</li>
-</ul>
-<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p><a href="https://s1.ax1x.com/2022/05/04/OEUUXD.png"><img src="https://s1.ax1x.com/2022/05/04/OEUUXD.png" alt="OEUUXD.png"></a></p>
-<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><ul>
-<li>Android中使用Handler导致内存泄漏原因分析。当一个对象已经不再被使用时，本该被回收但却因为有另外一个正在使用的对象持有它的引用从而导致它不能被回收，导致了内存泄漏。</li>
-</ul>
-<h1 id="原因详解"><a href="#原因详解" class="headerlink" title="原因详解"></a>原因详解</h1><ul>
-<li>在Handler消息队列还有未处理的消息 / 正在处理消息时，消息队列中的Message持有Handler实例的引用，由于Handler = 非静态内部类 &amp; 匿名内部类又默认持有外部类的引用。如图</li>
-</ul>
-<p><a href="https://s1.ax1x.com/2022/05/04/OE88YT.png"><img src="https://s1.ax1x.com/2022/05/04/OE88YT.png" alt="示例1.png"></a></p>
-<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><ul>
-<li><p>静态内部类+弱引用</p>
-</li>
-<li><p>静态内部类 不默认持有外部类的引用，从而使得 “未被处理&amp;正处理的消息 -&gt; Handler实例 -&gt; 外部类”的引用关系不复存在。</p>
-</li>
-<li><p>使用WeakReference弱引用持有Activity实例的原因：弱引用的对象拥有短暂的生命周期。在垃圾回收器线程扫描时，一旦发现了只具有弱引用的对象，不管当前内存空间足够与否，都会回收它的内存</p>
-</li>
-<li><p>工具类封装</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.linked.business.handler;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.os.Handler;</span><br><span class="line"><span class="keyword">import</span> android.os.Looper;</span><br><span class="line"><span class="keyword">import</span> android.os.Message;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.lang.ref.WeakReference;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrestLeakHandler</span> <span class="keyword">extends</span> <span class="title class_">Handler</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> WeakReference&lt;MessageHandler&gt; reference;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ArrestLeakHandler</span><span class="params">(MessageHandler messageHandler)</span> &#123;</span><br><span class="line">        reference = <span class="keyword">new</span> <span class="title class_">WeakReference</span>&lt;&gt;(messageHandler);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ArrestLeakHandler</span><span class="params">(MessageHandler messageHandler, Looper looper)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(looper);</span><br><span class="line">        reference = <span class="keyword">new</span> <span class="title class_">WeakReference</span>&lt;&gt;(messageHandler);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 复写handlerMessage 做更新UI的操作</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">handleMessage</span><span class="params">(Message msg)</span> &#123;</span><br><span class="line">        <span class="type">MessageHandler</span> <span class="variable">messageHandler</span> <span class="operator">=</span> reference.get();</span><br><span class="line">        <span class="keyword">if</span> (messageHandler != <span class="literal">null</span>) &#123;</span><br><span class="line">            messageHandler.handleMessage(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">MessageHandler</span> &#123;</span><br><span class="line">        <span class="keyword">void</span> <span class="title function_">handleMessage</span><span class="params">(Message msg)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li><p>具体 java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HandlerLeakActivity</span> <span class="keyword">extends</span> <span class="title class_">BaseActivity</span>&lt;ActivtyHandlerLeakBinding, BasePresenter&gt; <span class="keyword">implements</span> <span class="title class_">ArrestLeakHandler</span>.MessageHandler &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">(<span class="meta">@Nullable</span> Bundle savedInstanceState)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        initViews();</span><br><span class="line">        initHandler();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">initViews</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//发送消息A</span></span><br><span class="line">        vBinding.tvA.setOnClickListener(view -&gt; &#123;</span><br><span class="line">            <span class="type">Message</span> <span class="variable">msg</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Message</span>();</span><br><span class="line">            msg.obj = <span class="string">&quot;我是消息A&quot;</span>;</span><br><span class="line">            msg.what = <span class="number">1</span>;</span><br><span class="line">            mHandler.sendMessage(msg);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//发送消息B</span></span><br><span class="line">        vBinding.tvB.setOnClickListener(view -&gt; &#123;</span><br><span class="line">            <span class="type">Message</span> <span class="variable">msg</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Message</span>();</span><br><span class="line">            msg.obj = <span class="string">&quot;我是消息B&quot;</span>;</span><br><span class="line">            msg.what = <span class="number">2</span>;</span><br><span class="line">            mHandler.sendMessage(msg);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> BasePresenter <span class="title function_">initPresenter</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onBackPressed</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onBackPressed();</span><br><span class="line">        finish();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> ArrestLeakHandler mHandler, mMainHandler;</span><br><span class="line">    HandlerThread mHandlerThread;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">initHandler</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//①创建子线程</span></span><br><span class="line">        mHandlerThread = <span class="keyword">new</span> <span class="title class_">HandlerThread</span>(<span class="string">&quot;handlerThread&quot;</span>);</span><br><span class="line">        <span class="comment">//②开启线程</span></span><br><span class="line">        mHandlerThread.start();</span><br><span class="line">        <span class="comment">//③建立与主线程关联Handler</span></span><br><span class="line">        mMainHandler = <span class="keyword">new</span> <span class="title class_">ArrestLeakHandler</span>(<span class="built_in">this</span>);</span><br><span class="line">        mHandler = <span class="keyword">new</span> <span class="title class_">ArrestLeakHandler</span>(<span class="built_in">this</span>, mHandlerThread.getLooper());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">handleMessage</span><span class="params">(Message msg)</span> &#123;</span><br><span class="line">        <span class="keyword">switch</span> (msg.what) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> (String) msg.obj;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    Thread.sleep(<span class="number">1500</span>);</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                LogUtils.v(<span class="string">&quot;Handler Message---&gt;&quot;</span> + str);</span><br><span class="line">                mMainHandler.post(() -&gt; vBinding.tvShowMessage.setText(str));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onDestroy</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onDestroy();</span><br><span class="line">        mHandler.removeCallbacksAndMessages(<span class="literal">null</span>);</span><br><span class="line">        mHandler = <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li><p>注:当外部类（Activity为例）结束生命周期时（onDestroy），应当清除Handler消息队列里的所有消息（调用removeCallbacksAndMessages(null)）方法。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onDestroy</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onDestroy();</span><br><span class="line">        mHandler.removeCallbacksAndMessages(<span class="literal">null</span>);</span><br><span class="line">        mHandler = <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1></li>
-<li><p>当Handler消息队列中存在未处理或正在处理的消息时，并且存在引用关系:未被处理&amp;正处理的消息-&gt;Handler实例-&gt;外部类<br>当Handler的生命周期&gt;外部类的生命周期时（当外部类需销毁时(Handler消息队列中还有未处理或正在处理消息)),将使得外部类无法被垃圾回收器(GC)回收，既造成内存泄露。</p>
-</li>
-</ul>
-<h3 id="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"><a href="#如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻" class="headerlink" title="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"></a><font color=#9dc2af>如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻</font></h3>]]></content>
-      <categories>
-        <category>Android</category>
-      </categories>
-      <tags>
-        <tag>Handler</tag>
       </tags>
   </entry>
   <entry>
@@ -1123,6 +766,363 @@
       </categories>
       <tags>
         <tag>Handler</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Handler-内存泄漏解决方案</title>
+    <url>/2022/05/04/2022/android/Handler-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
+<li>Android开发中，内存泄漏是经常发生的，今天来详细聊一聊Handler使用过程中产生内存泄漏的场景以及对应的解决方案。</li>
+</ul>
+<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p><a href="https://s1.ax1x.com/2022/05/04/OEUUXD.png"><img src="https://s1.ax1x.com/2022/05/04/OEUUXD.png" alt="OEUUXD.png"></a></p>
+<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><ul>
+<li>Android中使用Handler导致内存泄漏原因分析。当一个对象已经不再被使用时，本该被回收但却因为有另外一个正在使用的对象持有它的引用从而导致它不能被回收，导致了内存泄漏。</li>
+</ul>
+<h1 id="原因详解"><a href="#原因详解" class="headerlink" title="原因详解"></a>原因详解</h1><ul>
+<li>在Handler消息队列还有未处理的消息 / 正在处理消息时，消息队列中的Message持有Handler实例的引用，由于Handler = 非静态内部类 &amp; 匿名内部类又默认持有外部类的引用。如图</li>
+</ul>
+<p><a href="https://s1.ax1x.com/2022/05/04/OE88YT.png"><img src="https://s1.ax1x.com/2022/05/04/OE88YT.png" alt="示例1.png"></a></p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><ul>
+<li><p>静态内部类+弱引用</p>
+</li>
+<li><p>静态内部类 不默认持有外部类的引用，从而使得 “未被处理&amp;正处理的消息 -&gt; Handler实例 -&gt; 外部类”的引用关系不复存在。</p>
+</li>
+<li><p>使用WeakReference弱引用持有Activity实例的原因：弱引用的对象拥有短暂的生命周期。在垃圾回收器线程扫描时，一旦发现了只具有弱引用的对象，不管当前内存空间足够与否，都会回收它的内存</p>
+</li>
+<li><p>工具类封装</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.linked.business.handler;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.os.Handler;</span><br><span class="line"><span class="keyword">import</span> android.os.Looper;</span><br><span class="line"><span class="keyword">import</span> android.os.Message;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.lang.ref.WeakReference;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrestLeakHandler</span> <span class="keyword">extends</span> <span class="title class_">Handler</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> WeakReference&lt;MessageHandler&gt; reference;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ArrestLeakHandler</span><span class="params">(MessageHandler messageHandler)</span> &#123;</span><br><span class="line">        reference = <span class="keyword">new</span> <span class="title class_">WeakReference</span>&lt;&gt;(messageHandler);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ArrestLeakHandler</span><span class="params">(MessageHandler messageHandler, Looper looper)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(looper);</span><br><span class="line">        reference = <span class="keyword">new</span> <span class="title class_">WeakReference</span>&lt;&gt;(messageHandler);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 复写handlerMessage 做更新UI的操作</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">handleMessage</span><span class="params">(Message msg)</span> &#123;</span><br><span class="line">        <span class="type">MessageHandler</span> <span class="variable">messageHandler</span> <span class="operator">=</span> reference.get();</span><br><span class="line">        <span class="keyword">if</span> (messageHandler != <span class="literal">null</span>) &#123;</span><br><span class="line">            messageHandler.handleMessage(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">MessageHandler</span> &#123;</span><br><span class="line">        <span class="keyword">void</span> <span class="title function_">handleMessage</span><span class="params">(Message msg)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>具体 java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HandlerLeakActivity</span> <span class="keyword">extends</span> <span class="title class_">BaseActivity</span>&lt;ActivtyHandlerLeakBinding, BasePresenter&gt; <span class="keyword">implements</span> <span class="title class_">ArrestLeakHandler</span>.MessageHandler &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">(<span class="meta">@Nullable</span> Bundle savedInstanceState)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        initViews();</span><br><span class="line">        initHandler();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">initViews</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//发送消息A</span></span><br><span class="line">        vBinding.tvA.setOnClickListener(view -&gt; &#123;</span><br><span class="line">            <span class="type">Message</span> <span class="variable">msg</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Message</span>();</span><br><span class="line">            msg.obj = <span class="string">&quot;我是消息A&quot;</span>;</span><br><span class="line">            msg.what = <span class="number">1</span>;</span><br><span class="line">            mHandler.sendMessage(msg);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//发送消息B</span></span><br><span class="line">        vBinding.tvB.setOnClickListener(view -&gt; &#123;</span><br><span class="line">            <span class="type">Message</span> <span class="variable">msg</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Message</span>();</span><br><span class="line">            msg.obj = <span class="string">&quot;我是消息B&quot;</span>;</span><br><span class="line">            msg.what = <span class="number">2</span>;</span><br><span class="line">            mHandler.sendMessage(msg);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> BasePresenter <span class="title function_">initPresenter</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onBackPressed</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onBackPressed();</span><br><span class="line">        finish();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> ArrestLeakHandler mHandler, mMainHandler;</span><br><span class="line">    HandlerThread mHandlerThread;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">initHandler</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">//①创建子线程</span></span><br><span class="line">        mHandlerThread = <span class="keyword">new</span> <span class="title class_">HandlerThread</span>(<span class="string">&quot;handlerThread&quot;</span>);</span><br><span class="line">        <span class="comment">//②开启线程</span></span><br><span class="line">        mHandlerThread.start();</span><br><span class="line">        <span class="comment">//③建立与主线程关联Handler</span></span><br><span class="line">        mMainHandler = <span class="keyword">new</span> <span class="title class_">ArrestLeakHandler</span>(<span class="built_in">this</span>);</span><br><span class="line">        mHandler = <span class="keyword">new</span> <span class="title class_">ArrestLeakHandler</span>(<span class="built_in">this</span>, mHandlerThread.getLooper());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">handleMessage</span><span class="params">(Message msg)</span> &#123;</span><br><span class="line">        <span class="keyword">switch</span> (msg.what) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> (String) msg.obj;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    Thread.sleep(<span class="number">1500</span>);</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                LogUtils.v(<span class="string">&quot;Handler Message---&gt;&quot;</span> + str);</span><br><span class="line">                mMainHandler.post(() -&gt; vBinding.tvShowMessage.setText(str));</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onDestroy</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onDestroy();</span><br><span class="line">        mHandler.removeCallbacksAndMessages(<span class="literal">null</span>);</span><br><span class="line">        mHandler = <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>注:当外部类（Activity为例）结束生命周期时（onDestroy），应当清除Handler消息队列里的所有消息（调用removeCallbacksAndMessages(null)）方法。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">onDestroy</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onDestroy();</span><br><span class="line">        mHandler.removeCallbacksAndMessages(<span class="literal">null</span>);</span><br><span class="line">        mHandler = <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1></li>
+<li><p>当Handler消息队列中存在未处理或正在处理的消息时，并且存在引用关系:未被处理&amp;正处理的消息-&gt;Handler实例-&gt;外部类<br>当Handler的生命周期&gt;外部类的生命周期时（当外部类需销毁时(Handler消息队列中还有未处理或正在处理消息)),将使得外部类无法被垃圾回收器(GC)回收，既造成内存泄露。</p>
+</li>
+</ul>
+<h3 id="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"><a href="#如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻" class="headerlink" title="如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻"></a><font color=#9dc2af>如果觉得此文章对你有所帮助，👍🏻请点个赞👍🏻</font></h3>]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Handler</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git代码回滚</title>
+    <url>/2022/03/17/2022/Git/git-back/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&ensp;在我们开发过程中，因各种原因，避免不了将业务代码回滚至指定版本，或者具体一些到某次commit。<br>下面我们将具体步骤及具体实现做分析。</p>
+<h2 id="操作前阅读"><a href="#操作前阅读" class="headerlink" title="操作前阅读"></a>操作前阅读</h2><p>&ensp; 在代码回归操作过程中主要 围绕 git reset 命令进行，该命令会把版本库和工作目录改变为已知状态。具体来讲，git reset 调整 HEAD 引用指向指定的提交，默认情况下还会更新索引以匹配该提交。根据需要，git reset 命令也可以修改工作目录以呈现指定提交代表的项目修订版本。</p>
+<ul>
+<li><p>git reset 命令有三个主要选项</p>
+</li>
+<li><p><code>--soft</code><br>&ensp; 会将 HEAD 引用指向指定提交。索引和工作目录的内容保持不变。这个版本的命令有“最小”影响，只改变一个符号引用的状态使其指向一个新提交。</p>
+</li>
+<li><p><code>--mixed</code><br>&ensp; 会将 HEAD 指向指定提交。索引内容也跟着改变以符合指定提交的树结构，但是工作目录中的内容保持不变。这个版本的命令将索引变成你刚刚暂存该提交全部变化时的状态，它会显示工作目录中还有什么修改。–mixed 是 git reset 的默认模式。</p>
+</li>
+<li><p><code>--hard</code><br>&ensp; 这条命令将 HEAD 引用指向给定提交。索引的内容也跟着改变以符合给定提交的树结构。此外，工作目录的内容也随之改变以反映给定提交表示的树的状态。当改变工作目录的时候，整个目录结构都改成给定提交对应的样子。做的修改都将丢失，新文件将被删除。在给定提交中但不在工作目录中的文件将恢复回来。</p>
+</li>
+</ul>
+<h2 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h2><p>&ensp;一般情况下，我们分为三个步骤就可以解决完代码回滚操作</p>
+<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><ul>
+<li>执行 git log命令查看日志，获取需要回退的版本号<br>例如:<br><img src="https://s3.bmp.ovh/imgs/2022/03/0c4021f483bb41cf.jpg"></li>
+</ul>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>执行 git reset –-soft <commit id> ，如 git reset –soft 4f5e9a90edeadcc45d85f43bd861a837fa7ce4c7 ，重置至指定版本的提交</p>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>执行 git push -f origin <branch_name> 强制提交当前版本号</p>
+<ul>
+<li>&gt;··&lt; 此时恭喜你，你的代码回滚成功了</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git常用命令</title>
+    <url>/2022/03/17/2022/Git/git-command/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Git 命令前，先了解几个关键词的概念</p>
+<ul>
+<li>  工作区（workSpace）</li>
+<li>  暂缓区（stage/index）</li>
+<li>  本地仓库（Repository）</li>
+<li>  远程仓库（Remote）</li>
+</ul>
+<p><img src="https://s3.bmp.ovh/imgs/2022/03/64aa14707f10bfb0.png"></p>
+<h1 id="Git-常见命令速查表"><a href="#Git-常见命令速查表" class="headerlink" title="Git 常见命令速查表"></a>Git 常见命令速查表</h1><p><img src="https://ftp.bmp.ovh/imgs/2020/04/5991c03f6436c41b.jpg"></p>
+<h2 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h2><ul>
+<li><p>初始化本地git仓库（创建新仓库）</p>
+<blockquote>
+<p><code>git init</code></p>
+</blockquote>
+</li>
+<li><p>配置用户名</p>
+<blockquote>
+<p><code>git config --global user.name &quot;xxx&quot; </code></p>
+</blockquote>
+</li>
+<li><p>配置邮件</p>
+<blockquote>
+<p><code>git config --global user.email &quot;xxx@xxx.com&quot; </code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="修改与提交"><a href="#修改与提交" class="headerlink" title="修改与提交"></a>修改与提交</h2><ul>
+<li><p>查看当前版本状态（是否修改）</p>
+<blockquote>
+<p><code>git status</code></p>
+</blockquote>
+</li>
+<li><p>添加修改的指定文件至index(暂缓区)</p>
+<blockquote>
+<p><code>git add &quot;xxx&quot;</code></p>
+</blockquote>
+</li>
+<li><p>添加修改的所有文件至index(暂缓区)</p>
+<blockquote>
+<p><code>git add .</code></p>
+</blockquote>
+</li>
+<li><p> 提交文件 “xxx”为本次提交的说明”</p>
+<blockquote>
+<p><code>git commit -m &#39;xxx&#39; </code></p>
+</blockquote>
+</li>
+<li><p>合并上一次提交<br>git commit -a -m ‘xxx’   ==&gt;&gt;（等价于） git add .   git commit -m ‘xxx’</p>
+<blockquote>
+<p><code>git commit --amend -m &#39;xxx&#39;</code></p>
+</blockquote>
+</li>
+<li><p>将add和commit合为一步</p>
+<blockquote>
+<p><code>git commit -am &#39;xxx&#39;</code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="查看历史提交"><a href="#查看历史提交" class="headerlink" title="查看历史提交"></a>查看历史提交</h2><ul>
+<li><p>显示提交日志</p>
+<blockquote>
+<p><code>git log </code></p>
+</blockquote>
+</li>
+<li><p> 显示1行日志 -n为n行 git log -5</p>
+<blockquote>
+<p><code>git log -1</code></p>
+</blockquote>
+</li>
+<li><p>显示提交日志及相关变动文件</p>
+<blockquote>
+<p><code>git log --stat </code></p>
+</blockquote>
+</li>
+<li><p>可查看该文件以前每一次push的修改内容）  </p>
+<blockquote>
+<p><code>git log -p + xxx(文件名)</code></p>
+</blockquote>
+</li>
+<li><p>只查看该文件当前这一次的push内容）</p>
+<blockquote>
+<p><code>git log - p -1 + xxx(文件名</code></p>
+</blockquote>
+</li>
+<li><p>显示HEAD提交日志</p>
+<blockquote>
+<p><code>git show HEAD </code></p>
+</blockquote>
+</li>
+<li><p>显示某个提交的详细内容</p>
+<blockquote>
+<p><code>git show dfb02e6e4f2f7b573337763e5c0013802e392818 </code></p>
+</blockquote>
+</li>
+<li><p>显示已存在的tag</p>
+<blockquote>
+<p><code>git tag</code></p>
+</blockquote>
+</li>
+<li><p>增加v2.0的tag</p>
+<blockquote>
+<p><code>git tag -a v2.0  -m &#39;xxx&#39;  </code></p>
+</blockquote>
+</li>
+<li><p>显示v2.0的日志及详细内容</p>
+<blockquote>
+<p><code>git show v2.0 </code></p>
+</blockquote>
+</li>
+<li><p>显示v2.0的日志</p>
+<blockquote>
+<p><code>git log v2.0  </code></p>
+</blockquote>
+</li>
+<li><p>显示所有未添加至index的变更</p>
+<blockquote>
+<p><code>git diff </code></p>
+</blockquote>
+</li>
+<li><p>显示所有已添加index但还未commit的变更</p>
+<blockquote>
+<p><code>git diff --cached </code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h2><ul>
+<li><p>撤销 add 过的文件 xxx（指定文件名）</p>
+<blockquote>
+<p><code>git reset HEAR &quot;xxx&quot; </code></p>
+</blockquote>
+</li>
+<li><p> 撤销上一次 add 过的所有文件</p>
+<blockquote>
+<p><code>git reset HEAR </code></p>
+</blockquote>
+</li>
+<li><p>放弃单个的文件修改</p>
+<blockquote>
+<p><code>git checkout -- xxx</code></p>
+</blockquote>
+</li>
+<li><p> 放弃所有的文件修改</p>
+<blockquote>
+<p><code>git checkout .</code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="分支与标签"><a href="#分支与标签" class="headerlink" title="分支与标签"></a>分支与标签</h2><ul>
+<li><p>显示本地所有分支</p>
+<blockquote>
+<p><code>git branch</code></p>
+</blockquote>
+</li>
+<li><p>显示远程、本地所有分支</p>
+<blockquote>
+<p><code>git branch -a</code></p>
+</blockquote>
+</li>
+<li><p>切换至指定分支下</p>
+<blockquote>
+<p><code>git checkout &quot;xxx&quot;</code></p>
+</blockquote>
+</li>
+<li><p>创建新的分支</p>
+<blockquote>
+<p><code>git branch ”xxx“   xxx为新的分支名</code></p>
+</blockquote>
+</li>
+<li><p>创建新的分支并切换至当前新建的分支下</p>
+<blockquote>
+<p><code>git check -b &quot;xxx&quot;</code></p>
+</blockquote>
+</li>
+<li><p>删除指定分支</p>
+<blockquote>
+<p><code>git branch -d &quot;xxx&quot;</code></p>
+</blockquote>
+</li>
+<li><p>强制删除指定分支</p>
+<blockquote>
+<p><code>git branch -D &quot;xxx&quot;</code></p>
+</blockquote>
+</li>
+<li><p>删除tag</p>
+<blockquote>
+<p><code>git tag -d &quot;xxx&quot;</code></p>
+</blockquote>
+</li>
+<li><p>清除本地缓存分支</p>
+<blockquote>
+<p><code>git remote prune origin</code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="合并已衍合"><a href="#合并已衍合" class="headerlink" title="合并已衍合"></a>合并已衍合</h2><ul>
+<li><p>合并远程master分支至当前分支</p>
+<blockquote>
+<p><code>git merge origin/master </code></p>
+</blockquote>
+</li>
+<li><p>合并提交ff44785404a8e的修改</p>
+<blockquote>
+<p><code>git cherry-pick &quot;ff44785404a8e&quot;</code></p>
+</blockquote>
+</li>
+<li><p>将当前分支push到远程master分支</p>
+<blockquote>
+<p><code>git push origin master </code></p>
+</blockquote>
+</li>
+<li><p>把所有本地tags推送到远程仓库</p>
+<blockquote>
+<p><code>git push --tags</code></p>
+</blockquote>
+</li>
+<li><p>获取所有远程分支（不更新本地分支）</p>
+<blockquote>
+<p><code>git fetch </code></p>
+</blockquote>
+</li>
+<li><p> 获取所有原创分支并清除服务器上已删掉的分支</p>
+<blockquote>
+<p><code>git fetch --prune </code></p>
+</blockquote>
+</li>
+<li><p>获取远程分支master并merge到当前分支</p>
+<blockquote>
+<p><code>git pull origin master </code></p>
+</blockquote>
+</li>
+<li><p>重命名文件README为README2</p>
+<blockquote>
+<p><code>git mv README README2</code></p>
+</blockquote>
+</li>
+<li><p>将当前版本重置为HEAD（通常用于merge失败回退）</p>
+<blockquote>
+<p><code>git reset --hard HEAD </code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="暂存"><a href="#暂存" class="headerlink" title="暂存"></a>暂存</h2><ul>
+<li><p>暂存当前修改，将所有至为HEAD状态</p>
+<blockquote>
+<p><code>git stash </code></p>
+</blockquote>
+</li>
+<li><p> 查看所有暂存</p>
+<blockquote>
+<p><code>git stash list</code></p>
+</blockquote>
+</li>
+<li><p>恢复暂存文件</p>
+<blockquote>
+<p><code>git stash pop </code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="操作远程"><a href="#操作远程" class="headerlink" title="操作远程"></a>操作远程</h2><ul>
+<li><p>本地分支推送到远程仓库</p>
+<blockquote>
+<p><code>git push origin master </code></p>
+</blockquote>
+</li>
+<li><p>-u选项指定一个默认主机</p>
+<blockquote>
+<p><code>git push -u origin</code></p>
+</blockquote>
+</li>
+<li><p>不管是否存在对应的远程分支，将本地的所有分支都推送到远程主机</p>
+<blockquote>
+<p><code>git push --all origin </code></p>
+</blockquote>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
